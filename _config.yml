@@ -40,14 +40,6 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
             nav:
               - title: '<i class="fas fa-home fa-fw"></i> Front Page'
                 href: /
-              - title: '<i class="fas fa-comments fa-fw"></i> message'
-                href: /comments/
-              - title: '<i class="fas fa-archive fa-fw"></i> archive'
-                href: /archive/
-              - title: '<i class="fas fa-tags fa-fw"></i> Label'
-                href: /tags/
-              - title: '<i class="fas fa-coffee fa-fw"></i> reward'
-                href: /merger/
             simple_jekyll_search:
               enable: true 
               full_text_search: false 
