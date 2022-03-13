@@ -195,23 +195,11 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
                     document.getElementById("run_time_hour"),
                     document.getElementById("run_time_minute"),
                     document.getElementById("run_time_second"),
-                    "10/04/2017 11:03:56")
+                    "03/12/2022 19:32:41")
                   </script>
                 </div>
               - |
                 <div>
-                  <div>
-                    <i class="fas fa-eye fa-fw"></i>
-                    <span id="busuanzi_value_page_pv">
-                      <i class="fas fa-spinner fa-pulse"></i>
-                    </span>次
-                  </div>
-                  <div>
-                    <i class="fas fa-paw fa-fw"></i>
-                    <span id="busuanzi_value_site_pv">
-                      <i class="fas fa-spinner fa-pulse"></i>
-                    </span>枚
-                  </div>
                   <div>
                     <i class="fas fa-user-friends fa-fw"></i>
                     <span id="busuanzi_value_site_uv">
@@ -235,26 +223,12 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
                   <i class="fas fa-copyright fa-fw"></i>
                   2017-2022 WuK
                 </div>
-              - |
-                <div>
-                  <i class="fas fa-info-circle fa-fw"></i>
-                  <a href="http://beian.miit.gov.cn">
-                    粤ICP备 20024947号
-                  </a>
-                </div>
-              - |
-                <div>
-                  <img src="https://cdn.jsdelivr.net/gh/wu-kan/blog-image/2021/12/07/0.png" class="fa-fw"></img>
-                  <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34070202000407">
-                    皖公网安备 34070202000407号
-                  </a>
-                </div>
             wordcount:
               enable: false 
               prepend: <i class="fas fa-user-edit fa-fw"></i>
               kilo: 千
               unit: 字
-          append_to_head: # <https://wu-kan.cn/_posts/2019-01-18-基于Jekyll搭建个人博客/>
+          append_to_head:
             - | # <https://www.runoob.com/cssref/css-colornames.html> 
               <style>
                 .theme-base-07 {
