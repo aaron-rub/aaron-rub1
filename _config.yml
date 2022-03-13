@@ -1,30 +1,22 @@
 title: wu-kan # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
-  SYSU第5年<br/>
-  水野爱<br/>
-  田宫例四驱车<br/>
-  <a href="mailto:i@wu-kan.cn">
+  Chris Rubin<br/>
+  <a href="mailto:christopherrubin68@gmail.com">
     <i class="fas fa-envelope"></i>
   </a>
-  <a href="https://github.com/wu-kan">
+  <a href="https://github.com/Chris-Ru">
     <i class="fab fa-github"></i>
   </a>
-  <a href="https://vjudge.net/user/WuK">
-    <i class="fas fa-smile"></i>
-  </a>
-  <a href="https://www.zhihu.com/people/wu.kan/activities">
-    <i class="fab fa-zhihu"></i>
-  </a>
   <br/>
-url: https://wu-kan.cn # 你的域名，例如 https://wu-kan.github.io
-baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
+url: https://Chris-Ru.github.io
+baseurl: ""
 
-defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/front-matter-defaults/>功能进行配置
+defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
   - scope:
       path: "" # an empty string here means all files in the project
-    values: # 以下配置项也可以在任意页面自定义
-      jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
-        comments: # 留言页，请先修改这里，确保使用的是你自己的repo！参照<https://utteranc.es/>
+    values: 
+      jekyll-theme-WuK: 
+        comments:
           append: |
             <script
               repo="wu-kan/utterances-storage"
@@ -36,30 +28,30 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             ></script>
         default:
           body:
-            theme-base: theme-base-07 # 可选的主题色包括08~0f，见 <https://github.com/poole/lanyon>
-            layout-reverse: true # 开启后sidebar在右边，反之左边
-            sidebar-overlay: true # 开启后正文不随sidebar移动而移动
+            theme-base: theme-base-07 <https://github.com/poole/lanyon>
+            layout-reverse: true 
+            sidebar-overlay: true 
           html_lang: zh # <https://www.w3school.com.cn/tags/html_ref_language_codes.asp>
-          sidebar: # 此配置项下是一些关于侧边栏的配置
-            disable: false # 是否不显示sidebar
-            avatar: # 侧边栏显示的头像
-              enable: true
-              img: https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320 # 头像的地址
-            nav: # 导航部分的内容，你也可以自己增加文字、图标（来自fontawesome）和对应的链接
-              - title: '<i class="fas fa-home fa-fw"></i> 首页'
+          sidebar: 
+            disable: false # show/no show sidebar
+            avatar:
+              enable: true 
+              img: https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320
+            nav:
+              - title: '<i class="fas fa-home fa-fw"></i> Front Page'
                 href: /
-              - title: '<i class="fas fa-comments fa-fw"></i> 留言'
+              - title: '<i class="fas fa-comments fa-fw"></i> message'
                 href: /comments/
-              - title: '<i class="fas fa-archive fa-fw"></i> 归档'
+              - title: '<i class="fas fa-archive fa-fw"></i> archive'
                 href: /archive/
-              - title: '<i class="fas fa-tags fa-fw"></i> 标签'
+              - title: '<i class="fas fa-tags fa-fw"></i> Label'
                 href: /tags/
-              - title: '<i class="fas fa-coffee fa-fw"></i> 打赏'
+              - title: '<i class="fas fa-coffee fa-fw"></i> reward'
                 href: /merger/
-            simple_jekyll_search: # 侧边栏的全站搜索
-              enable: true
-              full_text_search: false # 可能导致缓慢的搜索和加载
-              append: | # 如果看不懂就不改
+            simple_jekyll_search:
+              enable: true 
+              full_text_search: false 
+              append: |
                 <style>
                   #sidebar-search-input {
                     background: none;
@@ -95,9 +87,9 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                       fuzzy: true
                     })'
                 ></script>
-            jekyll-toc: # 侧边栏的目录插件，https://github.com/allejo/jekyll-toc
+            jekyll-toc: # https://github.com/allejo/jekyll-toc
               enable: true
-              prepend: | # 目录过长时自动折叠
+              prepend: |
                 <style>
                   #toc {
                     overflow: hidden hidden;
@@ -108,8 +100,8 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   }
                 </style>
             append_to_sidebar:
-              #- <script defer="defer" src="https://cdn.jsdelivr.net/gh/poole/lanyon@v1.1.0/public/js/script.min.js"></script> # 点击空白处而非按钮从而关闭侧边栏的插件，可选
-              - | # 侧边栏使用主题色
+              #- <script defer="defer" src="https://cdn.jsdelivr.net/gh/poole/lanyon@v1.1.0/public/js/script.min.js"></script>
+              - |
                 <style>
                   #sidebar-checkbox:checked ~ .sidebar-toggle,
                   .sidebar,
@@ -117,7 +109,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     background-color: var(--theme-base-color);
                   }
                 </style>
-              - | # 修复点击侧边栏按钮回到顶部的问题
+              - |
                 <style>
                   .sidebar-checkbox {
                     display: none;
@@ -127,7 +119,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     background: none;
                   }
                 </style>
-              - | # 修复侧边栏特定情况下抖动的问题，感谢 [@AmachiInori](https://github.com/wu-kan/wu-kan.github.io/issues/11)
+              - | # [@AmachiInori](https://github.com/wu-kan/wu-kan.github.io/issues/11)
                 <style>
                   .sidebar {
                     overflow: hidden;
@@ -137,7 +129,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     overflow-y: scroll; 
                   }
                 </style>
-              - | # 侧边栏头像效果
+              - | 
                 <style>
                   .effect {
                     margin: 1rem;
@@ -168,21 +160,21 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     transform: rotate3d(0, 1, 0, -180deg);
                   }
                 </style>
-              - | # 运行时间，可将倒数第三行的时间改成你自己的建站时间，格式仿照上面的；不需要的话可以把这一项都删掉
+              - |
                 <div>
                   <i class="fas fa-cog fa-spin fa-fw"></i>
                   <span id="run_time_day">
                     <i class="fas fa-spinner fa-pulse"></i>
-                  </span>天
+                  </span>
                   <span id="run_time_hour">
                     <i class="fas fa-spinner fa-pulse"></i>
-                  </span>时
+                  </span>
                   <span id="run_time_minute">
                     <i class="fas fa-spinner fa-pulse"></i>
-                  </span>分
+                  </span>
                   <span id="run_time_second">
                     <i class="fas fa-spinner fa-pulse"></i>
-                  </span>秒
+                  </span>
                   <script>
                     setInterval(function (d,h,m,s,b) {
                       function setzero(i) {
@@ -211,10 +203,10 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     document.getElementById("run_time_hour"),
                     document.getElementById("run_time_minute"),
                     document.getElementById("run_time_second"),
-                    "10/04/2017 11:03:56")// 这是我第一篇CSDN博客的时间
+                    "10/04/2017 11:03:56")
                   </script>
                 </div>
-              - | # 不蒜子页面统计，看不懂可不改
+              - |
                 <div>
                   <div>
                     <i class="fas fa-eye fa-fw"></i>
@@ -239,45 +231,45 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     async='async'
                   ></script>
                 </div>
-              - | # 觉得我的主题好用的话，让更多的人知道它吧！
+              - |
                 <div>
                   <i class="fas fa-thumbs-up fa-fw"></i>
                   <a href="https://jekyll-theme-WuK.wu-kan.cn">
                     jekyll-theme-WuK
                   </a>
                 </div>
-              - | # Copyright声明
+              - | # Copyright
                 <div>
                   <i class="fas fa-copyright fa-fw"></i>
                   2017-2022 WuK
                 </div>
-              - | # 我的备案信息，请你的网站删掉这一项。互联网非法外之地！
+              - |
                 <div>
                   <i class="fas fa-info-circle fa-fw"></i>
                   <a href="http://beian.miit.gov.cn">
                     粤ICP备 20024947号
                   </a>
                 </div>
-              - | # 公安网备信息
+              - |
                 <div>
                   <img src="https://cdn.jsdelivr.net/gh/wu-kan/blog-image/2021/12/07/0.png" class="fa-fw"></img>
                   <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34070202000407">
                     皖公网安备 34070202000407号
                   </a>
                 </div>
-            wordcount: # 全站字数统计
-              enable: false # 本地调试时建议关闭，非常影响站点生成速度（所需时间与博文数量的平方成正比）
+            wordcount:
+              enable: false 
               prepend: <i class="fas fa-user-edit fa-fw"></i>
               kilo: 千
               unit: 字
-          append_to_head: # 通过内嵌html的方式引入并定制插件，删改前确定知道自己在做什么。定制插件的方式可以参考这篇文章 <https://wu-kan.cn/_posts/2019-01-18-基于Jekyll搭建个人博客/>
-            - | # 自定义主题色，可对应 <https://www.runoob.com/cssref/css-colornames.html> 挑选
+          append_to_head: # <https://wu-kan.cn/_posts/2019-01-18-基于Jekyll搭建个人博客/>
+            - | # <https://www.runoob.com/cssref/css-colornames.html> 
               <style>
                 .theme-base-07 {
                   --theme-base-color: DarkSlateBlue;
                 }
               </style>
-            - | # 一些页面优化标签，看不懂可跳过
+            - |
               <meta
                 name="viewport"
                 content="width=device-width,minimum-scale=1,initial-scale=1"
@@ -292,7 +284,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 title="RSS"
                 type="application/rss+xml"
               />
-            - | # 网站小图标，可换成你自己的图片，改href中的部分即可
+            - |
               <link
                 rel="apple-touch-icon-precomposed"
                 href="https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320"
@@ -302,17 +294,17 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 icon"
                 href="https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=32"
               />
-            - | # 来自lanyon的页面样式，不要改
+            - |
               <link
                 rel="stylesheet"
                 href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
               />
-            - | # fontawesome图标；标题和引用之前插一个图标
+            - |
               <link
                 rel="stylesheet"
                 href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css"
               />
-            - | # 侧边栏放缩修正
+            - |
               <style>
                 .wrap {
                   transition-property: width,background-size,transform;
@@ -335,7 +327,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   }
                 }
               </style>
-            - | # <https://zenozeng.github.io/fonts.css/>，跨平台中文字体解决方案
+            - | # <https://zenozeng.github.io/fonts.css/>
               <link
                 rel="stylesheet"
                 href="https://cdn.jsdelivr.net/npm/@fontsource/courier-prime@4.5.2/index.min.css"
@@ -353,14 +345,14 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   font-family: "Courier Prime", "Courier New", "Courier", "Noto Sans Mono", "Noto Serif TC", "Noto Serif SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STZhongsong, STSong, "Songti SC", "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, monospace;
                 }
               </style>
-            - | # 修复行内图片默认样式
+            - |
               <style>
                 img {
                   display: inline-block;
                   margin: 0;
                 }
               </style>
-            - | # 自定义滚动条，仅对Chrome系浏览器生效
+            - |
               <style>
                 ::-webkit-scrollbar {
                   width: 3px;
@@ -370,7 +362,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   background-color: Gray;
                 }
               </style>
-            - | # 防止代码块过长
+            - | 
               <style>
                 @media only screen {
                   pre {
@@ -384,7 +376,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   }
                 }
               </style>
-            - | # 链接样式修正
+            - | 
               <style>
                 .container a,
                 .related-posts li a:hover {
@@ -394,10 +386,10 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 }
               </style>
         page:
-          title: # 为每个页面自动生成一个 H1 title
+          title: 
             enable: true
           prepend:
-            - | # 标题和引用前插一个图标
+            - | 
               <style>
                 h1::before,
                 h2::before,
@@ -414,20 +406,20 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 }
                 blockquote::before { content: "\f10d"; }
               </style>
-            - | # 选中字体颜色
+            - | 
               <style>
                 ::selection {
                   color: White;
                   background: Black;
                 }
               </style>
-            - | # 调整标题样式
+            - | 
               <style>
                 h1, h2, h3, h4, h5, h6 {
                   margin: 2rem 0rem 1rem 0rem;
                 }
               </style>
-            - | # 表格样式美化
+            - | 
               <style>
                 td,
                 th {
@@ -448,13 +440,13 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   width: 100%;
                 }
               </style>
-            - | # 列表项增加行距
+            - | 
               <style>
                 .content li {
                   margin: .25rem;
                 }
               </style>
-            - | # 首行缩进2字符
+            - | 
               <style>
                 p {
                   text-indent: 2rem;
@@ -463,7 +455,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   max-width: calc(100% - 4rem);
                 }
               </style>
-            - | # 增加宽屏下的显示内容
+            - | 
               <style>
                 .container {
                   min-width: 66.6%;
@@ -475,7 +467,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   }
                 }
               </style>
-            - | # 网站背景图片，不想用可以把这一项全删掉；要换壁纸图片的话可把url内的部分换成你自己的，比如你放在 /assets/image/background.jpg，那就改成 url(/assets/image/background.jpg)
+            - | #  /assets/image/background.jpg， url(/assets/image/background.jpg)
               <style>
                 @media (min-aspect-ratio: 2400/1850) {
                   .wrap {
@@ -483,7 +475,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   }
                 }
               </style>
-            - | # 给文章加上磨砂背景，防止被背景影响阅读；同时加上加载动画
+            - | 
               <style>
                 .container.content {
                   padding: 2rem;
@@ -506,7 +498,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 enable: true
                 key: $
               append:
-                | # 对KaTeX过长公式渲染超出页面的修正，感谢[@AmachiInori](https://github.com/wu-kan/wu-kan.github.io/issues/13)
+                | # [@AmachiInori](https://github.com/wu-kan/wu-kan.github.io/issues/13)
                 <link
                   rel="stylesheet"
                   href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
@@ -578,7 +570,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 ></script>
             - smart_include:
                 enable: false
-              append: | # 引入live2d看板娘！不需要可以把这一项都删掉
+              append: |
                 <link
                   rel="stylesheet"
                   href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
@@ -649,20 +641,20 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     });'
                 ></script>
         post:
-          date: # 显示博文时间
+          date:
             enable: true
             prepend: <i class="fas fa-calendar-day fa-fw"></i>
-          wordcount: # 统计全文字数
+          wordcount:
             enable: true
             prepend: <i class="fas fa-file-word fa-fw"></i>
             unit: 字
-          readtime: # 计算文章阅读时间
+          readtime:
             enable: true
             prepend: <i class="fas fa-clock fa-fw"></i>
             unit: 分
-            divided_by: 300 # 正常人的阅读速度大概每分钟三百个字
+            divided_by: 300 
           copyright:
-            | # 我的文章使用最宽松的知识共享协议：署名 4.0 国际 (CC BY 4.0)。您可以自由地：共享 — 在任何媒介以任何形式复制、发行本作品；演绎 — 修改、转换或以本作品为基础进行创作；在任何用途下，甚至商业目的。只要你遵守许可协议条款，许可人就无法收回你的这些权利。惟须遵守下列条件：署名 — 您必须给出适当的署名，提供指向本许可协议的链接，同时标明是否（对原始作品）作了修改。您可以用任何合理的方式来署名，但是不得以任何方式暗示许可人为您或您的使用背书。
+            |
             <br/>
             <i class="fab fa-creative-commons-by fa-fw"></i>
             <a
@@ -670,13 +662,12 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
               rel="license">
               CC BY 4.0
             </a>
-            （除特别声明或转载文章外）
             <br/>
             <i class="fas fa-coffee fa-fw"></i>
-            <a href="/merger/">如果这篇博客帮助到你，可以请我喝一杯咖啡~</a>
-        merger: # 打赏页，需要配置！
+            <a href="/merger/"></a>
+        merger: 
           append_to_head:
-            - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
+            - | #<https://merger.justhx.com/cn/docs/configure>
               <script>
                 var myname = "WuK";
                 var profile = "i@wu-kan.cn";
@@ -704,16 +695,16 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 http-equiv="Content-Security-Policy"
                 content="upgrade-insecure-requests"
               />
-            - | # merger的页面样式
+            - |
               <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.26.1/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.26.1/assets/styles/style.min.css">
               <script defer="defer" src="https://cdn.jsdelivr.net/combine/npm/jquery@3.5.1"></script>
               <script defer="defer" src="https://cdn.jsdelivr.net/combine/gh/lrsjng/jquery-qrcode@0.18.0/dist/jquery-qrcode.min.js,npm/blueimp-md5@2.18.0/js/md5.min.js,gh/hifocus/merger@0.26.1/assets/js/function.min.js,gh/hifocus/merger@0.26.1/assets/js/font_974919_xgtacm93vxp.min.js"></script>
-        home: # 展示页的配置可跳过，详见<https://revealjs.com/>
+        home: # <https://revealjs.com/>
           append_to_section_tag:
             - key: data-markdown
             - key: data-separator # 水平展示页分隔符
               value: <!-- .slide -->
-            - key: data-separator-vertical # 垂直展示页分隔符
+            - key: data-separator-vertical 
               value: <!-- .slide vertical=true -->
             - key: data-background-color
               value: "White"
@@ -753,55 +744,55 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
 
 compress_html: # <https://github.com/penibelst/jekyll-compress-html>
   clippings: all
-  comments: [] # 注释不能压缩，否则 reveal.js 的 ppt切屏受影响
+  comments: [] 
   endings: all
   ignore:
-    envs: all # 暂时关掉页面压缩
+    envs: all
   blanklines: false
   profile: false
   startings: []
 
-# githubpage上支持的插件见<https://pages.github.com/versions/>
+# <https://pages.github.com/versions/>
 plugins: # <https://jekyllrb.com/docs/plugins/>
-  - jekyll-readme-index # 使用readme做index，从而和github渲染效果一致
-  - jekyll-default-layout # 为每个markdown自动生成layout
-  - jekyll-seo-tag # 为每个页面生成标题
-  - jekyll-sitemap # 为站点生成站点地图
-  - jekyll-feed # 为站点生成RSS源
-  - jekyll-redirect-from # 站点页面重定向
-  - jekyll-remote-theme # 使用remote_theme插件实现主题的前后分离，详见<https://github.com/benbalter/jekyll-remote-theme/>
+  - jekyll-readme-index 
+  - jekyll-default-layout 
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from 
+  - jekyll-remote-theme #<https://github.com/benbalter/jekyll-remote-theme/>
 
-remote_theme: https://github.com/wu-kan/jekyll-theme-WuK@4.2.0 #使用固定版本号以防止主题更新导致站点显示错乱
+remote_theme: https://github.com/wu-kan/jekyll-theme-WuK@4.2.0 
 
-readme_index: # 缺失index.md和index.html时，使用README.md代替之
-  with_frontmatter: true # 支持带有yaml头的README
+readme_index:
+  with_frontmatter: true 
 
 webmaster_verifications: # <https://jekyll.github.io/jekyll-seo-tag/usage/>
   google: YIKi1rBnyUaS-DMYiluseI5kZzTwjCkTFmKkSkMZDJk
   baidu: szbTSfUGAB
 
 permalink: pretty
-# timezone: Asia/Shanghai # 解决githubpage显示时间不正确的问题，见<https://www.iana.org/time-zones>
-future: true # 允许发布时间在未来的文章
+# timezone: Asia/Shanghai #<https://www.iana.org/time-zones>
+future: true 
 
-# limit_posts: 999 # 限制博文数量
+# limit_posts: 999 
 # encoding: utf-8
 
 markdown: kramdown
-kramdown: # 见<https://kramdown.gettalong.org/options.html>
-  input: GFM # 见<http://jekyllcn.com/docs/configuration/#kramdown>
-  syntax_highlighter_opts: # 可见<https://kramdown.gettalong.org/syntax_highlighter/rouge.html>
+kramdown: # <https://kramdown.gettalong.org/options.html>
+  input: GFM # <http://jekyllcn.com/docs/configuration/#kramdown>
+  syntax_highlighter_opts: # <https://kramdown.gettalong.org/syntax_highlighter/rouge.html>
     block:
       disable: false
-      line_numbers: false #渲染出来的效果好鬼畜
+      line_numbers: false
     span:
       disable: false
-# 以下为 githubpage上不可修改的参数，见<https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll>
-#lsi: false # 为相关文章生成索引
-#safe: true # 禁用自定义插件
-#source: [your repo's top level directory] # Jekyll 读取文件的路径
-#incremental: false # 增量生成
-#highlighter: rouge # 代码高亮器
+# <https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll>
+#lsi: false 
+#safe: true 
+#source: [your repo's top level directory] # Jekyll
+#incremental: false # 
+#highlighter: rouge # 
 #gist:
 #  noscript: false
 #kramdown:
