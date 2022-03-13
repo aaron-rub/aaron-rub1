@@ -18,7 +18,15 @@
 <!-- .slide -->
 
 ## Projects
+Java Hacks
 
+Run on Replit.com
+
+<!-- .slide vertical=true -->
+
+<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@ChristopherRub3/T3-Individual-with-menu?embed=true"></iframe>
+
+  - 
 <!-- .slide vertical=true -->
 
 - [kpop repository](https://github.com/zenxha/kpop)[![Star](https://img.shields.io/github/stars/zenxha/kpop.svg)](https://github.com/zenxha/kpop)[![Fork](https://img.shields.io/github/forks/zenxha/kpop.svg)](https://github.com/zenxha/kpop/fork)
