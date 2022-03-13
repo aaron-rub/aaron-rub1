@@ -1,4 +1,4 @@
-# Welcome to my homepage! Let me introduce you to me below\~
+## Welcome to my Individual Website! Let me introduce you to me below\~
 
 <!-- .slide -->
 
