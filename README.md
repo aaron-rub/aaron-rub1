@@ -1,6 +1,6 @@
 # 
 
-欢迎访问我的主页！下面向你介绍一下我吧\~
+Welcome to my homepage! Let me introduce you to me below\~
 
 <!-- .slide -->
 
@@ -15,7 +15,7 @@
 
 
 - E-mail:
-  - **[i[at]wu-kan.cn](mailto:christopherrubin68@gmail.com)**
+  - **[i[at]Chris-Ru.github.io](mailto:christopherrubin68@gmail.com)**
 
 <!-- .slide -->
 
