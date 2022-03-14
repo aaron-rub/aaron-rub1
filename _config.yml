@@ -38,7 +38,7 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
               enable: true 
               img: https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320
             nav:
-              - title: '<i class="fas fa-home fa-fw"></i> Individual Github Tickets'
+              - title: '<i class="fas fa-github-square fa-fw"></i> Individual Github Tickets'
                 href: "https://github.com/Chris-Ru/Chris-Ru.github.io/projects/1"
             simple_jekyll_search:
               enable: true 
