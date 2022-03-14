@@ -1,4 +1,4 @@
-title: wu-kan #
+title: Chris-Ru #
 description: |
   Chris Rubin<br/>
   <a href="mailto:christopherrubin68@gmail.com">
@@ -61,7 +61,7 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
                 </style>
                 <input
                   id="sidebar-search-input"
-                  placeholder="搜索博文"
+                  placeholder=""
                 />
                 <ol
                   id="sidebar-search-results-container"
