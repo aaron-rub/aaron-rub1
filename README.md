@@ -24,7 +24,7 @@ Run on Replit.com
 
 <!-- .slide vertical=true -->
 
-<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@ChristopherRub3/T3-Individual-with-menu?embed=true"></iframe>
+<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@ChristopherRub3/T3-Individual-with-Menu?embed=true"></iframe>
 
   - 
 <!-- .slide vertical=true -->
