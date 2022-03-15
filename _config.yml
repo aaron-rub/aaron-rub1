@@ -10,7 +10,6 @@ description: |
   <br/>
 url: https://Chris-Ru.github.io
 baseurl: ""
-{% include navigation.html %}
 
 defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
   - scope:
