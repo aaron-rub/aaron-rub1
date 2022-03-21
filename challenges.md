@@ -1,3 +1,5 @@
+{% include navigation.html %}
+
 ## Week 0 Challenges
 
 <!-- .slide -->
