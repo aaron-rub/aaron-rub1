@@ -2,7 +2,7 @@
 
 # CSA
 
-<Details xmlns="http://www.w3.org/1999/html">
+<Details>
 <summary>Week 1</summary>
 
 ## Week 1 - [Ticket](https://github.com/Chris-Ru/Chris-Ru.github.io/issues/2)
@@ -83,7 +83,7 @@ Double sided Linked List
 
 
 
-<Details xmlns="http://www.w3.org/1999/html">
+<Details>
 <summary>Week 2</summary>
 
 ## Week 2 - [Ticket](https://github.com/Chris-Ru/Chris-Ru.github.io/issues/3)
