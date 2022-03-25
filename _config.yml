@@ -437,7 +437,7 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
               <style>
                 @media (min-aspect-ratio: 2400/1850) {
                   .wrap {
-                    background-image: url(http://m.gettywallpapers.com/wp-content/uploads/2021/04/Cute-Anime-Wallpaper-576x1024.png);
+                    background-image: url(https://wallpaperaccess.com/full/185662.png);
                   }
                 }
               </style>
