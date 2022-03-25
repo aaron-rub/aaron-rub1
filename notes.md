@@ -1,9 +1,6 @@
 {% include navigation.html %}
 
 
-<details>
-<summary>Week 2</summary>
-
 ## Week 2 - [Ticket](https://github.com/Chris-Ru/Chris-Ru.github.io/issues/3)
 
 ### (TPT) Study Group Challenge 2
@@ -236,8 +233,6 @@ CalculatorTester.java
         Calculator exp4Math = new Calculator(u + " ^ " +  s);
         System.out.println("Exponential Math\n" + exp4Math + "\n" + "\n" + "\n");
 ```
-
-</details>
 
 
 
