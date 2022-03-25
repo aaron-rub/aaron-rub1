@@ -237,7 +237,6 @@ CalculatorTester.java
 
 \
 \
-\
 
 ## Week 1 - [Ticket](https://github.com/Chris-Ru/Chris-Ru.github.io/issues/2)
 
