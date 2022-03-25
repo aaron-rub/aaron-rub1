@@ -234,10 +234,9 @@ CalculatorTester.java
         System.out.println("Exponential Math\n" + exp4Math + "\n" + "\n" + "\n");
 ```
 
-
-
-
-
+\
+\
+\
 
 ## Week 1 - [Ticket](https://github.com/Chris-Ru/Chris-Ru.github.io/issues/2)
 
@@ -305,6 +304,3 @@ Double sided Linked List
 * Previous Node
   * and Next Node
   * null <- above <-> blob <-> cup -> null
-
-
-</Details>
