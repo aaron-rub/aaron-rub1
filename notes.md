@@ -84,7 +84,7 @@ Double sided Linked List
 
 
 
-<Details>
+<details>
 <summary>Week 2</summary>
 
 ## Week 2 - [Ticket](https://github.com/Chris-Ru/Chris-Ru.github.io/issues/3)
@@ -320,4 +320,4 @@ CalculatorTester.java
         System.out.println("Exponential Math\n" + exp4Math + "\n" + "\n" + "\n");
 ```
 
-</Details>
+</details>
