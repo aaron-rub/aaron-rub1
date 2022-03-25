@@ -239,12 +239,6 @@ CalculatorTester.java
 
 
 
-
-
-
-<Details>
-<summary>Week 1</summary>
-
 ## Week 1 - [Ticket](https://github.com/Chris-Ru/Chris-Ru.github.io/issues/2)
 
 ### (TPT) Study Group Challenge 1
