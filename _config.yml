@@ -437,7 +437,8 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
               <style>
                 @media (min-aspect-ratio: 2400/1850) {
                   .wrap {
-                    background-image: url(https://wallpaperaccess.com/full/185662.png);
+                    /*  background-image: url(https://wallpaperaccess.com/full/185662.png);  */
+                   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5V_XL4izlrtuEFgs_ulzCtIt32tdzHd7fvg&usqp=CAU);
                   }
                 }
               </style>
