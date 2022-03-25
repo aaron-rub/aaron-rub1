@@ -650,6 +650,15 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
               });
             "></script>
 
+compress_html: # <https://github.com/penibelst/jekyll-compress-html>
+  clippings: all
+  comments: []
+  endings: all
+  ignore:
+    envs: all
+  blanklines: false
+  profile: false
+  startings: []
 
 # <https://pages.github.com/versions/>
 plugins: # <https://jekyllrb.com/docs/plugins/>
@@ -661,6 +670,14 @@ plugins: # <https://jekyllrb.com/docs/plugins/>
   - jekyll-redirect-from 
   - jekyll-remote-theme #<https://github.com/benbalter/jekyll-remote-theme/>
 
+remote_theme: https://github.com/wu-kan/jekyll-theme-WuK@4.2.0
+
+readme_index:
+  with_frontmatter: true
+
+webmaster_verifications: # <https://jekyll.github.io/jekyll-seo-tag/usage/>
+  google: YIKi1rBnyUaS-DMYiluseI5kZzTwjCkTFmKkSkMZDJk
+  baidu: szbTSfUGAB
 
 permalink: pretty
 # timezone: Asia/Shanghai #<https://www.iana.org/time-zones>
