@@ -662,7 +662,7 @@ plugins: # <https://jekyllrb.com/docs/plugins/>
   - jekyll-redirect-from 
   - jekyll-remote-theme #<https://github.com/benbalter/jekyll-remote-theme/>
 
-
+remote_theme: https://github.com/wu-kan/jekyll-theme-WuK@4.2.0
 
 
 permalink: pretty
