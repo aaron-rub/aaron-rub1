@@ -2,8 +2,6 @@
 
 # CSA
 
-<details>
-<summary>Week by Week Notes</summary>
 
 <Details>
 <summary>Week 1</summary>
@@ -323,4 +321,3 @@ CalculatorTester.java
 ```
 
 </Details>
-</details>
