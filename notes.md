@@ -1,88 +1,5 @@
 {% include navigation.html %}
 
-# CSA
-
-
-<Details>
-<summary>Week 1</summary>
-
-## Week 1 - [Ticket](https://github.com/Chris-Ru/Chris-Ru.github.io/issues/2)
-
-### (TPT) Study Group Challenge 1
-
-Challenges:
-    0. Sub-menu separates assignments into weeks.
-    1. Add and delete elements in a queue.
-    2. Merge 2 queues into an ordered fashion.
-    3. Reverse a queue using a stack.
-
-### [Tri 3: Tech Talk 1: Linked Lists Part 2](https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-3:-Tech-Talk-1:-Linked-Lists-Part-2)
-
-Linked List - Connects Objects to each other
-
-```Java
-import java.util.LinkedList;
-
-LinkedList<String> myLinkedList = new LinkedList<String>();
-myLinkedList.add("Above");
-myLinkedList.add("Blob");
-System.out.println(myLinkedList);
-```
-
-
-
-Generic T - Putting a Class inside an Array? {}
-
-Iterable Interface - For each loop through... a Linked List?
-
-Queue - Built on top of a List (FIRST IN FIRST OUT)
-* (processes this one ->) above -> blob -> cup -> drip -> john -> leek -> nay -> ro -> wee -> null (<- add stuff here)
-  * To add elements, add to head (queuing)
-  * To delete elements, remove from tail (dequeue)
-
-Stack - Also built on top of a List (LAST IN FIRST OUT)
-* above (<- processes this one, new elements are also added here, like a stack of plates)
-  * blob
-  * cup
-  * drip
-  * john
-  * leek
-  * nay
-  * ro
-  * wee
-
-Challenge 2 Hint: dequeue and requeue
-
-nil - null
-
-
-implements vs. extends
-* 'implements' has no definition? usually from interface
-  * extends
-
-Generic T - You can put whatever data type you wish into the LinkedList. Once a data type is put in, the entire LinkedList becomes (uses) that data type.
-```Java
-public class Queue<T> implements Iterable<T> {
-    LinkedList<T> head, tail;
-    // Rest of implementation not shown...
-}
-```
-
-Double sided Linked List
-* Previous Node
-  * and Next Node
-  * null <- above <-> blob <-> cup -> null
-
-
-</Details>
-
-
-
-
-
-
-
-
 
 <details>
 <summary>Week 2</summary>
@@ -93,15 +10,15 @@ Double sided Linked List
 
 Assignment:
 1. Build a calculator to process expressions and ultimately change RPN to a calculation.
-   1. Build in Power of operator ^: 2 ^ 1 = 2, 2 ^ 2 = 4, 2 ^ 3 = 8
-   2. Extra credit. Build variable assignment and evaluation into your expressions (a = 2; a + 1).
-   3. Extra credit. Investigate Wikipedia article and pseudo code and try adding a SQRT(). Try building Pythagoras expression.
+    1. Build in Power of operator ^: 2 ^ 1 = 2, 2 ^ 2 = 4, 2 ^ 3 = 8
+    2. Extra credit. Build variable assignment and evaluation into your expressions (a = 2; a + 1).
+    3. Extra credit. Investigate Wikipedia article and pseudo code and try adding a SQRT(). Try building Pythagoras expression.
 
 ### [Tri 3: Tech Talk 2: Calculator](https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-3:-Tech-Talk-2:-Calculator)
 
 Math Symbols:
 * PEMDAS, each operator has its own precedence (priority)
-  * Add exponent ^ operator with priority 3
+    * Add exponent ^ operator with priority 3
 ```Java
 // Helper definition for supported operators
     private final Map<String, Integer> OPERATORS = new HashMap<>();
@@ -321,3 +238,84 @@ CalculatorTester.java
 ```
 
 </details>
+
+
+
+
+
+
+
+
+
+<Details>
+<summary>Week 1</summary>
+
+## Week 1 - [Ticket](https://github.com/Chris-Ru/Chris-Ru.github.io/issues/2)
+
+### (TPT) Study Group Challenge 1
+
+Challenges:
+    0. Sub-menu separates assignments into weeks.
+    1. Add and delete elements in a queue.
+    2. Merge 2 queues into an ordered fashion.
+    3. Reverse a queue using a stack.
+
+### [Tri 3: Tech Talk 1: Linked Lists Part 2](https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-3:-Tech-Talk-1:-Linked-Lists-Part-2)
+
+Linked List - Connects Objects to each other
+
+```Java
+import java.util.LinkedList;
+
+LinkedList<String> myLinkedList = new LinkedList<String>();
+myLinkedList.add("Above");
+myLinkedList.add("Blob");
+System.out.println(myLinkedList);
+```
+
+
+
+Generic T - Putting a Class inside an Array? {}
+
+Iterable Interface - For each loop through... a Linked List?
+
+Queue - Built on top of a List (FIRST IN FIRST OUT)
+* (processes this one ->) above -> blob -> cup -> drip -> john -> leek -> nay -> ro -> wee -> null (<- add stuff here)
+  * To add elements, add to head (queuing)
+  * To delete elements, remove from tail (dequeue)
+
+Stack - Also built on top of a List (LAST IN FIRST OUT)
+* above (<- processes this one, new elements are also added here, like a stack of plates)
+  * blob
+  * cup
+  * drip
+  * john
+  * leek
+  * nay
+  * ro
+  * wee
+
+Challenge 2 Hint: dequeue and requeue
+
+nil - null
+
+
+implements vs. extends
+* 'implements' has no definition? usually from interface
+  * extends
+
+Generic T - You can put whatever data type you wish into the LinkedList. Once a data type is put in, the entire LinkedList becomes (uses) that data type.
+```Java
+public class Queue<T> implements Iterable<T> {
+    LinkedList<T> head, tail;
+    // Rest of implementation not shown...
+}
+```
+
+Double sided Linked List
+* Previous Node
+  * and Next Node
+  * null <- above <-> blob <-> cup -> null
+
+
+</Details>
