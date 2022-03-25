@@ -5,9 +5,9 @@
 <Details>
 <summary>Week 1</summary>
 
-## Week 1 - [Ticket](https://github.com/Chris-Ru/Chris-Ru.github.io/issues/2)
+<h1> Week 1 - [Ticket](https://github.com/Chris-Ru/Chris-Ru.github.io/issues/2) </h1>
 
-### (TPT) Study Group Challenge 1
+<h3> (TPT) Study Group Challenge 1 </h3>
 
 Challenges:
     0. Sub-menu separates assignments into weeks.
@@ -15,7 +15,7 @@ Challenges:
     2. Merge 2 queues into an ordered fashion.
     3. Reverse a queue using a stack.
 
-### [Tri 3: Tech Talk 1: Linked Lists Part 2](https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-3:-Tech-Talk-1:-Linked-Lists-Part-2)
+<h3> [Tri 3: Tech Talk 1: Linked Lists Part 2](https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-3:-Tech-Talk-1:-Linked-Lists-Part-2) </h3>
 
 Linked List - Connects Objects to each other
 
@@ -86,9 +86,9 @@ Double sided Linked List
 <Details>
 <summary>Week 2</summary>
 
-## Week 2 - [Ticket](https://github.com/Chris-Ru/Chris-Ru.github.io/issues/3)
+<h2> Week 2 - [Ticket](https://github.com/Chris-Ru/Chris-Ru.github.io/issues/3) </h2>
 
-### (TPT) Study Group Challenge 2
+<h3> (TPT) Study Group Challenge 2 </h3>
 
 Assignment:
 1. Build a calculator to process expressions and ultimately change RPN to a calculation.
@@ -96,7 +96,7 @@ Assignment:
    2. Extra credit. Build variable assignment and evaluation into your expressions (a = 2; a + 1).
    3. Extra credit. Investigate Wikipedia article and pseudo code and try adding a SQRT(). Try building Pythagoras expression.
 
-### [Tri 3: Tech Talk 2: Calculator](https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-3:-Tech-Talk-2:-Calculator)
+<h3> [Tri 3: Tech Talk 2: Calculator](https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-3:-Tech-Talk-2:-Calculator) </h3>
 
 Math Symbols:
 * PEMDAS, each operator has its own precedence (priority)
@@ -161,7 +161,7 @@ Result (Double):
 ```
 
 
-### Challenge #1 + #2 + #4: RPN To Result, Power, Square Root
+<h3> Challenge #1 + #2 + #4: RPN To Result, Power, Square Root </h3>
 Calculator.java
 ```Java
 public class Calculator {
