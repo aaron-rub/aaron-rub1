@@ -1,7 +1,5 @@
 package src.week3.sorts;
 
-import src.week3.Sorting;
-
 import java.time.Duration;
 import java.time.Instant;
 import java.util.*;
