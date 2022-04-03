@@ -13,7 +13,7 @@ public class Menu3 {
             menu.put(i++, new MenuRow(row.getTitle(), row.getAction()));
         }
     }
-  
+
     public MenuRow get(int i) {
         return menu.get(i);
     }
@@ -70,7 +70,7 @@ class Driver {
 
             try {
                 Scanner sc = new Scanner(System.in);
-              
+
                 int selection = sc.nextInt();
                 System.out.println("");
 
