@@ -2,6 +2,234 @@
 
 {% include notesnav.html %}
 
+## Week 3 - [Ticket](https://github.com/Chris-Ru/Chris-Ru.github.io/issues/5)
+
+Assignment:
+
+Objective 1: Perform analysis on all of these sorts using 5,000 random pieces of data.
+- Build custom Bubble Sort, Selection Sort, Insertion Sort and Merge Sort.
+- Build a GitHub page that describes Sort implementations and the Big O complexity of these Sorts.
+- Establish analytics including: time, comparisons and swaps.
+- Average the results for each each Sort, run each at least 12 times and 5000 elements. You should throw out High and Low when doing analysis.
+- Make your final/judgement on best sort considering Data Structure loading, Comparisons, Swaps, Big O complexity, and Time.
+
+### Time
+Sorting.java
+```java
+public class Sorting {
+    private final ArrayList<Integer> data = new ArrayList<>();
+    private final Duration timeElapsed;
+
+    public Sorting(int size, String method) {
+        Instant start = Instant.now();  // time capture -- start
+        // build an array
+        for (int i = 0; i < size; i++) {
+            data.add((int)(Math.random() * (size+1)));
+        }
+        // use Inheritance and Polymorphism to replace data.sort with your own algorithm
+        //BubbleSort.sort(data);
+
+        switch(method) {
+            case "Selection Sort":
+                Selections.sort(data);
+                System.out.println();
+                break;
+            case "Bubble Sort":
+                BubbleSorts.sort(data);
+                System.out.println();
+                break;
+            case "Insertion Sort":
+                Insertions.sort(data);
+                break;
+            case "Merge Sort":
+                MergeSorts.sort(data);
+                break;
+            default:
+                System.out.println("This is an invalid Sort Selection");
+        }
+
+        Instant end = Instant.now();    // time capture -- end
+        this.timeElapsed = Duration.between(start, end);
+
+    }
+    public ArrayList<Integer> getData() {
+        return data;
+    }
+
+    public int getTimeElapsed() {
+        return timeElapsed.getNano();
+    }
+}
+```
+
+Getting the time of the sort (directly):
+```java
+        Instant start = Instant.now();  // time capture -- start
+        // build an array
+        for (int i = 0; i < size; i++) {
+        data.add((int)(Math.random() * (size+1)));
+        }
+        ...
+        Instant end = Instant.now();    // time capture -- end
+        this.timeElapsed = Duration.between(start, end);
+```
+
+### Bubble Sort Objective 1
+BubbleSorts.java
+- Analysis:
+  - Average Speed (in seconds):
+    - ~0.000
+```java
+        int temp;
+        if (inputArray.size()>1) // check if the number of orders is larger than 1
+        {
+        for (int x=0; x<inputArray.size(); x++) // bubble sort outer loop
+        {
+        for (int i=0; i < inputArray.size()-i; i++) {
+        if (inputArray.get(i).compareTo(inputArray.get(i+1)) > 0)
+        {
+        temp = inputArray.get(i);
+        inputArray.set(i,inputArray.get(i+1) );
+        inputArray.set(i+1, temp);
+        }
+        }
+        }
+        }
+```
+
+### Insertion Sort Objective 1
+Insertions.java
+- Analysis:
+    - Average Speed (in seconds):
+        - ~0.000
+
+```java
+for(int i=1;i<inputArray.size();i++){
+
+    int key = inputArray.get(i);
+
+    for(int j= i-1;j>=0;j--){
+        if(key<inputArray.get(j)){
+            // Shifting Each Element to its right as key is less than the existing element at current index
+            inputArray.set(j+1,inputArray.get(j));
+
+            // Special case scenario when all elements are less than key, so placing key value at 0th Position
+            if(j==0){
+                inputArray.set(0, key);
+            }
+        }else{
+            // Putting Key value after element at current index as Key value is no more less than the existing element at current index
+            inputArray.set(j+1,key);
+            break; // You need to break the loop to save un necessary iteration
+        }
+    }
+}
+```
+
+### Selection Sort Objective 1
+Selections.java
+- Analysis:
+    - Average Speed (in seconds):
+        - ~0.000
+
+```java
+    public void sortGivenArray(){
+
+        int smallInt = 0;
+        int j=0;
+        int smallIntIndex = 0;
+
+        for(int i=1;i<inputArray.size();i++){
+
+            smallInt = inputArray.get(i-1);
+            smallIntIndex = i-1;
+
+            for(j=i;j<inputArray.size();j++){
+                if(inputArray.get(j)<smallInt){
+                    smallInt = inputArray.get(j);
+                    smallIntIndex = j;
+                }
+            }
+
+            //Swap the smallest element with the first element of unsorted subarray
+            swap(i-1, smallIntIndex);
+        }
+    }
+
+    public void swap(int sourceIndex,int destIndex){
+        int temp = inputArray.get(destIndex);
+        inputArray.set(destIndex, inputArray.get(sourceIndex));
+        inputArray.set(sourceIndex, temp);
+    }
+```
+
+
+### Merge Sort Objective 1
+MergeSorts.java
+- Analysis:
+    - Average Speed (in seconds):
+        - ~0.000
+
+```java
+    public void sortGivenArray(){
+        divide(0, this.inputArray.size()-1);
+        }
+
+public void divide(int startIndex,int endIndex){
+
+        //Divide till you breakdown your list to single element
+        if(startIndex<endIndex && (endIndex-startIndex)>=1){
+        int mid = (endIndex + startIndex)/2;
+        divide(startIndex, mid);
+        divide(mid+1, endIndex);
+
+        //merging Sorted array produce above into one sorted array
+        merger(startIndex,mid,endIndex);
+        }
+        }
+
+public void merger(int startIndex,int midIndex,int endIndex){
+
+        //Below is the mergedarray that will be sorted array Array[i-midIndex] , Array[(midIndex+1)-endIndex]
+        ArrayList<Integer> mergedSortedArray = new ArrayList<Integer>();
+
+        int leftIndex = startIndex;
+        int rightIndex = midIndex+1;
+
+        while(leftIndex<=midIndex && rightIndex<=endIndex){
+        if(inputArray.get(leftIndex)<=inputArray.get(rightIndex)){
+        mergedSortedArray.add(inputArray.get(leftIndex));
+        leftIndex++;
+        }else{
+        mergedSortedArray.add(inputArray.get(rightIndex));
+        rightIndex++;
+        }
+        }
+
+        //Either of below while loop will execute
+        while(leftIndex<=midIndex){
+        mergedSortedArray.add(inputArray.get(leftIndex));
+        leftIndex++;
+        }
+
+        while(rightIndex<=endIndex){
+        mergedSortedArray.add(inputArray.get(rightIndex));
+        rightIndex++;
+        }
+
+        int i = 0;
+        int j = startIndex;
+        //Setting sorted array to original one
+        while(i<mergedSortedArray.size()){
+        inputArray.set(j, mergedSortedArray.get(i++));
+        j++;
+        }
+        }
+    }
+```
+
+
+
 ## Week 2 - [Ticket](https://github.com/Chris-Ru/Chris-Ru.github.io/issues/3)
 
 ### (TPT) Study Group Challenge 2
