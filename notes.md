@@ -79,6 +79,8 @@ BubbleSorts.java
 - Analysis:
   - Average Speed (in seconds):
     - ~0.000
+  - Big O Complexity(same speed as Insertion and Selection Sort)
+    - O(n^2)
 ```java
         int temp;
         if (inputArray.size()>1) // check if the number of orders is larger than 1
@@ -102,6 +104,8 @@ Insertions.java
 - Analysis:
     - Average Speed (in seconds):
         - ~0.000
+    - Big O Complexity(same speed as Selection and Bubble Sort)
+        - O(n^2)
 
 ```java
 for(int i=1;i<inputArray.size();i++){
@@ -131,6 +135,8 @@ Selections.java
 - Analysis:
     - Average Speed (in seconds):
         - ~0.000
+  - Big O Complexity(same speed as Insertion and Bubble Sort)
+      - O(n^2)
 
 ```java
     public void sortGivenArray(){
@@ -169,6 +175,8 @@ MergeSorts.java
 - Analysis:
     - Average Speed (in seconds):
         - ~0.000
+  - Big O Complexity(fastest with the most data compared with other sorts - therefore best sort)
+      - O(n*log(n))
 
 ```java
     public void sortGivenArray(){
