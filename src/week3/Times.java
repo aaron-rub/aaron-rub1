@@ -7,9 +7,10 @@ import java.util.Comparator;
 
 import src.week3.sorts.*;
 
-public class Times {
-    private final ArrayList<Integer> data = new ArrayList<>();
+public abstract class Times {
+    private final static ArrayList<Integer> data = new ArrayList<>();
     private final Duration timeElapsed;
+    protected String name;
 
     public Times(int size) {
         Instant start = Instant.now();  // time capture -- start
@@ -17,16 +18,21 @@ public class Times {
         for (int i = 0; i < size; i++) {
             data.add((int)(Math.random() * (size+1)));
         }
+
+        this.init();
+
         // use Inheritance and Polymorphism to replace data.sort with your own algorithm
         // data.sort(Comparator.naturalOrder());
-        BubbleSort.sort(data);
-        Insertion.sort(data);
-        MergeSort.sort(data);
-        Selection.sort(data);
+        // BubbleSort.sort(data);
+        // Insertion.sort(data);
+        // MergeSort.sort(data);
+        // Selection.sort(data);
 
         Instant end = Instant.now();    // time capture -- end
         this.timeElapsed = Duration.between(start, end);
     }
+
+    protected abstract void init();
 
     public ArrayList<Integer> getData() {
         return data;
@@ -40,7 +46,9 @@ public class Times {
         int sum=0, time=0, TIMES=12, SIZE=5000;
 
         for(int i=0; i< TIMES; i++) {
-            Times s = new Times(SIZE);
+            Times s = new Times(SIZE){
+                protected void init() {}
+            };
             for(int j = 0; j<s.getData().size(); j++) {
                 // To see data, uncomment next line
                 // System.out.println(s.getData());
