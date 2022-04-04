@@ -50,8 +50,8 @@ public class NTimes {
 
 
         Integer Ten = 0;
-        System.out.println("HIGH (in nano): "+Twelve.remove(0)); // remove smallest
-        System.out.println("LOW (in nano): "+Twelve.remove(Twelve.size()-1)); //remove largest
+        System.out.println("LOW (in nano): "+Twelve.remove(0)); // remove smallest
+        System.out.println("HIGH (in nano): "+Twelve.remove(Twelve.size()-1)); //remove largest
         for(Integer d : Twelve) {
             Ten += d;
         }
