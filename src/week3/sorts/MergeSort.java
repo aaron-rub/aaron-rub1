@@ -1,26 +1,28 @@
 package src.week3.sorts;
 
+import src.week3.Times;
+
 import java.time.Duration;
 import java.time.Instant;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
 
-public class MergeSort {
-
+public abstract class MergeSort extends Times {
     private ArrayList<Integer> inputArray;
 
-    public ArrayList<Integer> getSortedArray() {
-        return inputArray;
+    public MergeSort(int size) {
+        super(size);
     }
 
-    public MergeSort(ArrayList<Integer> inputArray){
-        this.inputArray = inputArray;
-    }
-
-    public void sortGivenArray(){
+    @Override
+    protected void sortGivenArray(){
         divide(0, this.inputArray.size()-1);
     }
 
-    public void divide(int startIndex,int endIndex){
+    @Override
+    protected void divide(int startIndex,int endIndex){
+        super.name = "Merge Sort";
+        System.out.println("Merge Sort");
 
         //Divide till you breakdown your list to single element
         if(startIndex<endIndex && (endIndex-startIndex)>=1){
@@ -33,9 +35,11 @@ public class MergeSort {
         }
     }
 
-    public void merger(int startIndex,int midIndex,int endIndex){
+    @Override
+    protected void merger(int startIndex,int midIndex,int endIndex){
+        super.name = "Method 2";
 
-        //Below is the mergedarray that will be sorted array Array[i-midIndex] , Array[(midIndex+1)-endIndex]
+        //Below is the merged array that will be sorted array Array[i-midIndex] , Array[(midIndex+1)-endIndex]
         ArrayList<Integer> mergedSortedArray = new ArrayList<Integer>();
 
         int leftIndex = startIndex;
@@ -69,9 +73,5 @@ public class MergeSort {
             inputArray.set(j, mergedSortedArray.get(i++));
             j++;
         }
-    }
-
-    public static void sort(ArrayList<Integer> a) {
-        MergeSort ms = new MergeSort(a);
     }
 }
