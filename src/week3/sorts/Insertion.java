@@ -7,8 +7,8 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public class Insertion extends Times {
-    private static ArrayList<Integer> inputArray = new ArrayList<Integer>();
+public abstract class Insertion extends Times {
+    private static final ArrayList<Integer> inputArray = new ArrayList<Integer>();
 
     public Insertion(int size) {
         super(size);
@@ -16,8 +16,10 @@ public class Insertion extends Times {
 
 
     @Override
-    protected void init() {
+    protected void is() {
         super.name = "Insertion Sort";
+        System.out.println("Insertion Sort");
+
         for(int i=1;i<inputArray.size();i++){
 
             int key = inputArray.get(i);
