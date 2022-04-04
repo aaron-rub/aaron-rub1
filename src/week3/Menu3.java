@@ -55,11 +55,8 @@ class Driver {
     public static void main(String[] args) {
         MenuRow[] rows = new MenuRow[]{
                 new MenuRow("Exit", () -> main(null)),
-                new MenuRow("Sorts", () -> Times.main(null)),
-                // new MenuRow("Seletion Sort", () -> Selection.main(null)),
-                // new MenuRow("Insertion Sort", () -> Insertion.main(null)),
-                // new MenuRow("Merge Sort", () -> MergeSort.main(null)),
-                // new MenuRow("Bubble Sort", () -> BubbleSort.main(null)),
+                new MenuRow("Abstract", () -> Times.main(null)),
+                new MenuRow("Non-Abstract", () -> NTimes.main(null)),
         };
 
         Menu3 menu = new Menu3(rows);
