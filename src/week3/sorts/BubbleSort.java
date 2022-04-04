@@ -7,19 +7,18 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public class BubbleSort {
+public class BubbleSort extends Times {
     private static ArrayList<Integer> inputArray = new ArrayList<Integer>();
 
-    public BubbleSort(ArrayList<Integer> inputArray){
-        BubbleSort.inputArray = inputArray;
+    public BubbleSort(int size) {
+        super(size);
     }
 
-    public static ArrayList<Integer> getInputArray() {
-        return inputArray;
-    }
 
-    public static void bubblesrt(ArrayList<Integer> inputArray)
-    {
+    @Override
+    protected void init(){
+        super.name = "BubbleSort";
+        System.out.println("Bubble Sort");
         int temp;
         if (inputArray.size()>1) // check if the number of orders is larger than 1
         {
@@ -35,11 +34,5 @@ public class BubbleSort {
                 }
             }
         }
-
-    }
-
-
-    public static void sort(ArrayList<Integer> a) {
-        BubbleSort bs = new BubbleSort(a);
     }
 }
