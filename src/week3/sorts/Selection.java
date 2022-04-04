@@ -1,27 +1,24 @@
 package src.week3.sorts;
 
-import src.week3.Sorting;
+import src.week3.Times;
 
-import java.util.Scanner;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public class Selection {
+public abstract class Selection extends Times {
+    private final ArrayList<Integer> inputArray = new ArrayList<Integer>();
 
-    private ArrayList<Integer> inputArray = new ArrayList<Integer>();
-
-    //Just To fetch display purpose
-    public ArrayList<Integer> getSortedArray() {
-        return inputArray;
+    public Selection(int size) {
+        super(size);
     }
 
-    public Selection(ArrayList<Integer> inputArray){
-        this.inputArray = inputArray;
-    }
 
-    public void sortGivenArray(){
+    @Override
+    protected void sel1(int sourceIndex,int destIndex){
+        super.name = "Selection Sort";
+        System.out.println("Selection Sort");
 
         int smallInt = 0;
         int j=0;
@@ -40,18 +37,11 @@ public class Selection {
             }
 
             //Swap the smallest element with the first element of unsorted subarray
-            swap(i-1, smallIntIndex);
+            sel1(i-1, smallIntIndex);
         }
-    }
 
-    public void swap(int sourceIndex,int destIndex){
         int temp = inputArray.get(destIndex);
         inputArray.set(destIndex, inputArray.get(sourceIndex));
         inputArray.set(sourceIndex, temp);
-    }
-
-
-    public static void sort(ArrayList<Integer> a) {
-        Selection s = new Selection(a);
     }
 }
