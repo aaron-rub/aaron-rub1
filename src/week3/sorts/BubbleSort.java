@@ -7,8 +7,8 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public class BubbleSort extends Times {
-    private static ArrayList<Integer> inputArray = new ArrayList<Integer>();
+public abstract class BubbleSort extends Times {
+    private static final ArrayList<Integer> inputArray = new ArrayList<Integer>();
 
     public BubbleSort(int size) {
         super(size);
@@ -16,9 +16,10 @@ public class BubbleSort extends Times {
 
 
     @Override
-    protected void init(){
+    protected void bs(){
         super.name = "BubbleSort";
         System.out.println("Bubble Sort");
+
         int temp;
         if (inputArray.size()>1) // check if the number of orders is larger than 1
         {
