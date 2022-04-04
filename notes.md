@@ -78,7 +78,7 @@ Getting the time of the sort (directly):
 BubbleSorts.java
 - Analysis:
   - Average Speed (in seconds):
-    - ~0.000
+    - ~0.000 ( on personal computer)
   - Big O Complexity(same speed as Insertion and Selection Sort)
     - O(n^2)
 ```java
@@ -103,7 +103,7 @@ BubbleSorts.java
 Insertions.java
 - Analysis:
     - Average Speed (in seconds):
-        - ~0.000
+        - ~0.000 ( on personal computer)
     - Big O Complexity(same speed as Selection and Bubble Sort)
         - O(n^2)
 
@@ -134,7 +134,7 @@ for(int i=1;i<inputArray.size();i++){
 Selections.java
 - Analysis:
     - Average Speed (in seconds):
-        - ~0.000
+        - ~0.000 ( on personal computer)
   - Big O Complexity(same speed as Insertion and Bubble Sort)
       - O(n^2)
 
@@ -174,7 +174,7 @@ Selections.java
 MergeSorts.java
 - Analysis:
     - Average Speed (in seconds):
-        - ~0.000
+        - ~0.000 ( on personal computer)
   - Big O Complexity(fastest with the most data compared with other sorts - therefore best sort)
       - O(n*log(n))
 
