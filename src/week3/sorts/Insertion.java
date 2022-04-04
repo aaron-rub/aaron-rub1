@@ -1,23 +1,23 @@
 package src.week3.sorts;
 
+import src.week3.Times;
+
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public class Insertion {
+public class Insertion extends Times {
     private static ArrayList<Integer> inputArray = new ArrayList<Integer>();
 
-    public static ArrayList<Integer> getInputArray() {
-        return inputArray;
+    public Insertion(int size) {
+        super(size);
     }
 
-    //Just for the display purpose
-    public Insertion(ArrayList<Integer> inputArray){
-        Insertion.inputArray = inputArray;
-    }
 
-    public static void sortGivenArray(){
+    @Override
+    protected void init() {
+        super.name = "Insertion Sort";
         for(int i=1;i<inputArray.size();i++){
 
             int key = inputArray.get(i);
@@ -38,10 +38,5 @@ public class Insertion {
                 }
             }
         }
-    }
-
-
-    public static void sort(ArrayList<Integer> a){
-        Insertion is = new Insertion(a);
     }
 }
