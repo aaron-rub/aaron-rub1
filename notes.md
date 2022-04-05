@@ -540,3 +540,239 @@ Double sided Linked List
 * Previous Node
   * and Next Node
   * null <- above <-> blob <-> cup -> null
+
+
+
+
+
+
+## Week 0 - [Ticket](https://github.com/Chris-Ru/Chris-Ru.github.io/issues/1)
+
+### (TPT) Study Group Challenges
+
+Assignment:
+- Java Menu that is not hard coded (Use object array?)
+- Number Swap option that sorts two numbers from least to greatest
+- Matrix Format option that prints a numpad
+
+Final Result:
+* Link to code + runtime: [CS-AP-2 Java Replit](https://replit.com/@ChristopherRub3/T3-Individual-with-Menu)
+* Ticket: [Ticket](https://github.com/Chris-Ru/Chris-Ru.github.io/issues/1)
+
+### [Tri 3: Tech Talk 0 Data Structures](https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-3:-Tech-Talk-0---Data-Structures)
+
+- Imperative Paradigm: Procedural Programming like Python
+- Object-Oriented Programming: Java, uses Objects and Classes, Inheritance, Abstraction, and Polymorphism
+- Big Tech Companies Stock: Google, Microsoft, Apple, Amazon
+- Assignment: Make a menu based off of a data structure, Challenge 1 and Challenge 2 and Matrix
+
+### Challenge: Menu
+
+
+Menu.java
+```java
+package src.week0;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Menu0 {
+    Map<Integer, MenuRow> menu = new HashMap<>();
+
+    public Menu0(MenuRow[] rows) {
+        int i = 0;
+        for (MenuRow row : rows) {
+            menu.put(i++, new MenuRow(row.getTitle(), row.getAction()));
+        }
+    }
+  
+    public MenuRow get(int i) {
+        return menu.get(i);
+    }
+
+    public void print() {
+        for (Map.Entry<Integer, MenuRow> pair : menu.entrySet()) {
+            System.out.println(pair.getKey() + " ==> " + pair.getValue().getTitle());
+        }
+    }
+
+    public static void main(String[] args) {
+        Driver.main(args);
+    }
+
+}
+
+class MenuRow {
+    String title;
+    Runnable action;
+
+    public MenuRow(String title, Runnable action) {
+        this.title = title;
+        this.action = action;
+    }
+
+    public String getTitle() {
+        return this.title;
+    }
+    public Runnable getAction() {
+        return this.action;
+    }
+
+    public void run() {
+        action.run();
+    }
+}
+
+class Driver {
+    public static void main(String[] args) {
+        MenuRow[] rows = new MenuRow[]{
+                new MenuRow("Exit", () -> main(null)),
+                new MenuRow("Swap", () -> Swapper.main(null)),
+                new MenuRow("Matrix", () -> Matrix.main(null)),
+        };
+
+        Menu0 menu = new Menu0(rows);
+
+        while (true) {
+            System.out.println("Week 0 Menu:");
+            menu.print();
+
+            try {
+                Scanner sc = new Scanner(System.in);
+              
+                int selection = sc.nextInt();
+
+                try {
+                    MenuRow row = menu.get(selection);
+                    if (row.getTitle().equals("Exit"))
+                        return;
+                    row.run();
+                } catch (Exception e) {
+                    System.out.printf("\nInvalid selection: %d \n\n", selection);
+                }
+            } catch (Exception e) {
+                System.out.println("\nInput is not a number\n");
+            }
+        }
+    }
+}
+
+
+```
+
+### Challenge: Numpad Swapper
+Swapper.java
+```java
+package src.week0;
+
+public class Swapper {
+    private int value;
+
+    public Swapper(Integer value) {
+        this.value = value;
+    }
+
+    public String toString() {
+        return (String.format("%d", this.value));
+    }
+
+    public void swapToLowHighOrder(Swapper i) {
+        if (this.value > i.value) {
+            int tmp = this.value;
+            this.value = i.value;
+            i.value = tmp;
+        }
+    }
+
+    public static void swapper(int n0, int n1) {
+        Swapper a = new Swapper(n0);
+        Swapper b = new Swapper(n1);
+        System.out.println("Before: " + a + " " + b);
+        a.swapToLowHighOrder(b);  // conditionally build swap method to change values of a, b
+        System.out.println("After: " + a + " " + b);
+        System.out.println();
+    }
+
+    public static void main(String[] ags) {
+        Swapper.swapper(21, 16);
+        Swapper.swapper(16, 21);
+        Swapper.swapper(16, -1);
+    }
+
+}
+
+```
+
+### Challenge: Matrix
+Matrix.java
+```java
+package src.week0;
+
+// matrix class is used to store and format the output of a matrix
+public class Matrix {
+    private final int[][] matrix;
+
+    // store matrix
+    public Matrix(int[][] matrix) {
+        this.matrix = matrix;
+    }
+
+    // nest for loops to format output of a matrix
+    public String toString() {
+        // construct output of matrix using for loops
+        // outer loop for row
+        StringBuilder output = new StringBuilder();
+        for (int[] row : matrix) {
+            // inner loop for column
+            for (int cell : row) {
+                output.append((cell==-1) ? " " : String.format("%x",cell)).append(" ");
+            }
+            output.append("\n"); // new line
+        }
+        return output.toString();
+    }
+
+    // print it backwards matrix
+    public String reverse() {
+        // outer loop starting at end row
+        StringBuilder output = new StringBuilder();
+        for (int i = matrix.length;  0 < i; i--) {
+            // inner loop for column
+            for (int j =  matrix[i-1].length; 0 < j; j--) {
+                output.append((matrix[i-1][j-1]==-1) ? " " : String.format("%x",matrix[i-1][j-1])).append(" ");
+            }
+            output.append("\n"); // new line
+        }
+        return output.toString();
+    }
+
+    // declare and initialize a matrix for a keypad
+    static int[][] keypad() {
+        return new int[][]{ { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }, {-1, 0, -1} };
+    }
+
+    // declare and initialize a random length arrays
+    static int[][] numbers() {
+        return new int[][]{ { 0, 1 },
+                { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 },
+                { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 } };
+    }
+
+    // tester method for matrix formatting
+    public static void main(String[] args) {
+        Matrix m0 = new Matrix(keypad());
+        System.out.println("Keypad:");
+        System.out.println(m0);
+        System.out.println(m0.reverse());
+
+
+        Matrix m1 = new Matrix(numbers());
+        System.out.println("Numbers Systems:");
+        System.out.println(m1);
+        System.out.println(m1.reverse());
+
+    }
+
+}
+```
