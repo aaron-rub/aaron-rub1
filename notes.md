@@ -65,7 +65,7 @@ Getting the time of the sort (directly):
         Instant start = Instant.now();  // time capture -- start
         // build an array
         for (int i = 0; i < size; i++) {
-        data.add((int)(Math.random() * (size+1)));
+            data.add((int)(Math.random() * (size+1)));
         }
         ...
         Instant end = Instant.now();    // time capture -- end
@@ -83,17 +83,17 @@ BubbleSorts.java
         int temp;
         if (inputArray.size()>1) // check if the number of orders is larger than 1
         {
-        for (int x=0; x<inputArray.size(); x++) // bubble sort outer loop
-        {
-        for (int i=0; i < inputArray.size()-i; i++) {
-        if (inputArray.get(i).compareTo(inputArray.get(i+1)) > 0)
-        {
-        temp = inputArray.get(i);
-        inputArray.set(i,inputArray.get(i+1) );
-        inputArray.set(i+1, temp);
-        }
-        }
-        }
+            for (int x=0; x<inputArray.size(); x++) // bubble sort outer loop
+                {
+                    for (int i=0; i < inputArray.size()-i; i++) {
+                        if (inputArray.get(i).compareTo(inputArray.get(i+1)) > 0)
+                        {
+                        temp = inputArray.get(i);
+                        inputArray.set(i,inputArray.get(i+1) );
+                        inputArray.set(i+1, temp);
+                        }
+                    }
+                }
         }
 ```
 
@@ -181,7 +181,7 @@ MergeSorts.java
         divide(0, this.inputArray.size()-1);
         }
 
-public void divide(int startIndex,int endIndex){
+    public void divide(int startIndex,int endIndex){
 
         //Divide till you breakdown your list to single element
         if(startIndex<endIndex && (endIndex-startIndex)>=1){
@@ -194,7 +194,7 @@ public void divide(int startIndex,int endIndex){
         }
         }
 
-public void merger(int startIndex,int midIndex,int endIndex){
+    public void merger(int startIndex,int midIndex,int endIndex){
 
         //Below is the mergedarray that will be sorted array Array[i-midIndex] , Array[(midIndex+1)-endIndex]
         ArrayList<Integer> mergedSortedArray = new ArrayList<Integer>();
@@ -203,33 +203,33 @@ public void merger(int startIndex,int midIndex,int endIndex){
         int rightIndex = midIndex+1;
 
         while(leftIndex<=midIndex && rightIndex<=endIndex){
-        if(inputArray.get(leftIndex)<=inputArray.get(rightIndex)){
-        mergedSortedArray.add(inputArray.get(leftIndex));
-        leftIndex++;
-        }else{
-        mergedSortedArray.add(inputArray.get(rightIndex));
-        rightIndex++;
-        }
+            if(inputArray.get(leftIndex)<=inputArray.get(rightIndex)){
+                mergedSortedArray.add(inputArray.get(leftIndex));
+                leftIndex++;
+            }else{
+                mergedSortedArray.add(inputArray.get(rightIndex));
+                rightIndex++;
+            }
         }
 
         //Either of below while loop will execute
         while(leftIndex<=midIndex){
-        mergedSortedArray.add(inputArray.get(leftIndex));
-        leftIndex++;
+            mergedSortedArray.add(inputArray.get(leftIndex));
+            leftIndex++;
         }
 
         while(rightIndex<=endIndex){
-        mergedSortedArray.add(inputArray.get(rightIndex));
-        rightIndex++;
+            mergedSortedArray.add(inputArray.get(rightIndex));
+            rightIndex++;
         }
 
         int i = 0;
         int j = startIndex;
         //Setting sorted array to original one
         while(i<mergedSortedArray.size()){
-        inputArray.set(j, mergedSortedArray.get(i++));
-        j++;
-        }
+            inputArray.set(j, mergedSortedArray.get(i++));
+            j++;
+            }
         }
     }
 ```
@@ -251,6 +251,7 @@ Assignment:
 Math Symbols:
 * PEMDAS, each operator has its own precedence (priority)
     * Add exponent ^ operator with priority 3
+
 ```Java
 // Helper definition for supported operators
     private final Map<String, Integer> OPERATORS = new HashMap<>();
