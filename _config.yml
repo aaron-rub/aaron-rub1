@@ -40,9 +40,9 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
             nav:
               - title: '<i class="fa-solid fa-home fa-fw"></i> Home Page'
                 href: /
-              - title: '<i class="fa-regular fa-code"></i> Challenges'
+              - title: '<i class="fa-solid fa-code"></i> Challenges'
                 href: "https://chris-ru.github.io/challenges/"
-              - title: '<i class="fa-regular fa-file-lines"></i> Notes'
+              - title: '<i class="fa-solid fa-file-lines"></i> Notes'
                 href: "https://chris-ru.github.io/notes/"
               - title: '<i class="fa-brands fa-github-square fa-fw"></i> Individual Github Tickets'
                 href: "https://github.com/Chris-Ru/Chris-Ru.github.io/projects/1"
