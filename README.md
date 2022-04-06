@@ -1,5 +1,3 @@
-{% include navigation.html %}
-
 ## Welcome to my Individual Website! Let me introduce you to me below\~
 
 <!-- .slide -->
