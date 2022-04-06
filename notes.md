@@ -1,5 +1,3 @@
-{% include navigation.html %}
-
 {% include notesnav.html %}
 
 ## Week 3 - [Ticket](https://github.com/Chris-Ru/Chris-Ru.github.io/issues/5)

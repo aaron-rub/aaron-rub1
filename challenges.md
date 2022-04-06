@@ -1,5 +1,3 @@
-{% include navigation.html %}
-
 ## Weekly Tasks Repl.it
 
 <!-- .slide -->
