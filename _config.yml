@@ -46,6 +46,8 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
                 href: "https://chris-ru.github.io/notes/"
               - title: '<i class="fa-brands fa-github-square fa-fw"></i> Individual Github Tickets'
                 href: "https://github.com/Chris-Ru/Chris-Ru.github.io/projects/1"
+              - title: '<i class="fa-solid fa-file-lines"></i> Test Prep'
+                href: "https://chris-ru.github.io/testprep/"
             simple_jekyll_search:
               enable: true 
               full_text_search: false 
