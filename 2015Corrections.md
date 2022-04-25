@@ -37,7 +37,7 @@ listOfWords.size() / k != sizeOfList - 1)
 
 Why?
 
-
+I did not find much of a difference between these answers so I guessed, but the real difference is that "listOfWords.size()" is /k and not -1.
 
 Q36
 ![](q36.png)
@@ -46,7 +46,10 @@ Correct Answer: D (11)
 
 Why?
 
-
+* with a for each loop, the code iterates through each student.
+* With the getAge method, the age is added to the sum and the count has been increased.
+* Sum and count then are used for the average
+* Wrong answers include getting age and major without a getter or using arraylists when not needed
 
 Q37
 ![](q37.png)
@@ -55,7 +58,8 @@ Correct Answer: E (II and III)
 
 Why?
 
-
+II works because it starts from the end and the counter goes back. With it, the words can be printed in reverse order upto the index in the parameter.
+III works because it moves items in the front to the back.
 
 Q38
 ![](q38.png)
@@ -64,4 +68,6 @@ Correct Answer: C (Returns the number of elements in numbers that are equal to v
 
 Why?
 
-
+Returns the number of elements in numbers that are equal to val
+If statement adds one if the previous number is the same
+Recursive.
