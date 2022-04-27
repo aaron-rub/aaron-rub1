@@ -46,10 +46,14 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
                 href: "https://chris-ru.github.io/notes/"
               - title: '<i class="fa-brands fa-github-square fa-fw"></i> Individual Github Tickets'
                 href: "https://github.com/Chris-Ru/Chris-Ru.github.io/projects/1"
-              - title: '<i class="fa-solid fa-file-lines"></i> Test Prep'
+              - title: '<i class="fa-solid fa-floppy-disk"></i> Test Prep'
                 href: "https://chris-ru.github.io/testprep/"
-              - title: '<i class="fa-solid fa-file-lines"></i> 2015 FRQ'
+              - title: '<i class="fa-solid fa-laptop-file"></i> 2015 MCQ Corrections'
+                href: "https://chris-ru.github.io/2015Corrections/"
+              - title: '<i class="fa-solid fa-laptop-file"></i> 2015 FRQ Corrections'
                 href: "https://chris-ru.github.io/2015FRQ/"
+              - title: '<i class="fa-solid fa-laptop-file"></i> 2020 MCQ Corrections'
+                href: "https://chris-ru.github.io/2020Corrections/"
             simple_jekyll_search:
               enable: true 
               full_text_search: false 
