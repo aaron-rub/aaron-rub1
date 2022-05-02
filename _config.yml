@@ -54,6 +54,8 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
                 href: "https://chris-ru.github.io/2015FRQ/"
               - title: '<i class="fa-solid fa-laptop-file"></i> 2020 MCQ Corrections'
                 href: "https://chris-ru.github.io/2020Corrections/"
+              - title: '<i class="fa-solid fa-laptop-file"></i> 2020 FRQ Corrections'
+                href: "https://chris-ru.github.io/2020FRQ/"
             simple_jekyll_search:
               enable: true 
               full_text_search: false 
