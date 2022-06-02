@@ -1,4 +1,4 @@
-# Self-grade: 2.25/5
+Self-grade: 2.25/5
 
 - Database with multiple tables
   - Utilized traditional database from Mort tech talk to [store user login information](https://github.com/zenxha/musicgacha/tree/main/src/main/java/com/musicgacha/controllers/database/person) in table format
