@@ -42,12 +42,8 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
                 href: /
               - title: '<i class="fa-solid fa-code"></i> Challenges'
                 href: "https://aaron-rub.github.io/challenges/"
-              - title: '<i class="fa-solid fa-file-lines"></i> Notes'
-                href: "https://aaron-rub.github.io/notes/"
               - title: '<i class="fa-brands fa-github-square fa-fw"></i> Individual Github Tickets'
                 href: "https://github.com/aaron-rub/FP"
-              - title: '<i class="fa-solid fa-floppy-disk"></i> Test Prep'
-                href: "https://aaron-rub.github.io/testprep/"
               - title: '<i class="fa-solid fa-laptop-file"></i> Student Lesson Notes'
                 href: "https://github.com/aaron-rub/FP/issues/16/"
               - title: '<i class="fa-solid fa-laptop-file"></i> Notes'
