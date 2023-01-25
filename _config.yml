@@ -8,7 +8,7 @@ description: |
     <i class="fab fa-github"></i>
   </a>
   <br/>
-url: https://Chris-Ru.github.io
+url: https://aaron-rub.github.io
 baseurl: ""
 
 defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
@@ -41,21 +41,28 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
               - title: '<i class="fa-solid fa-home fa-fw"></i> Home Page'
                 href: /
               - title: '<i class="fa-solid fa-code"></i> Challenges'
-                href: "https://chris-ru.github.io/challenges/"
+                href: "https://aaron-rub
+              .github.io/challenges/"
               - title: '<i class="fa-solid fa-file-lines"></i> Notes'
-                href: "https://chris-ru.github.io/notes/"
+                href: "https://aaron-rub
+              .github.io/notes/"
               - title: '<i class="fa-brands fa-github-square fa-fw"></i> Individual Github Tickets'
                 href: "https://github.com/Chris-Ru/Chris-Ru.github.io/projects/1"
               - title: '<i class="fa-solid fa-floppy-disk"></i> Test Prep'
-                href: "https://chris-ru.github.io/testprep/"
+                href: "https://aaron-rub
+              .github.io/testprep/"
               - title: '<i class="fa-solid fa-laptop-file"></i> 2015 MCQ Corrections'
-                href: "https://chris-ru.github.io/2015Corrections/"
+                href: "https://aaron-rub
+              .github.io/2015Corrections/"
               - title: '<i class="fa-solid fa-laptop-file"></i> 2015 FRQ Corrections'
-                href: "https://chris-ru.github.io/2015FRQ/"
+                href: "https://aaron-rub
+              .github.io/2015FRQ/"
               - title: '<i class="fa-solid fa-laptop-file"></i> 2020 MCQ Corrections'
-                href: "https://chris-ru.github.io/2020Corrections/"
+                href: "https://aaron-rub
+              .github.io/2020Corrections/"
               - title: '<i class="fa-solid fa-laptop-file"></i> 2020 FRQ Corrections'
-                href: "https://chris-ru.github.io/2020FRQ/"
+                href: "https://aaron-rub
+              .github.io/2020FRQ/"
             simple_jekyll_search:
               enable: true 
               full_text_search: false 
