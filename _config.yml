@@ -48,6 +48,8 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
                 href: "https://github.com/aaron-rub/FP/issues/16/"
               - title: '<i class="fa-solid fa-laptop-file"></i> Notes'
                 href: "https://aaron-rub.github.io/2022KeyVocab/"
+              - title: '<i class="fa-solid fa-laptop-file"></i> Hacks'
+                href: "https://aaron-rub.github.io/hacks/"
             simple_jekyll_search:
               enable: true 
               full_text_search: false 
