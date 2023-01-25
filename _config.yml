@@ -263,12 +263,12 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
             - |
               <link
                 rel="apple-touch-icon-precomposed"
-                href="https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320"
+                href="https://i.etsystatic.com/10879542/r/il/d0e537/2203383611/il_794xN.2203383611_pmnp.jpg"
               />
               <link
                 rel="shortcut
                 icon"
-                href="https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=32"
+                href="https://i.etsystatic.com/10879542/r/il/d0e537/2203383611/il_794xN.2203383611_pmnp.jpg"
               />
             - |
               <link
