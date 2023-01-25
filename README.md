@@ -39,13 +39,13 @@ Notes
 
 <!-- .slide vertical=true -->
 
-- **Python**, Familiar
-- **Java**, Familiar
+- **Python**, Learning-Familiar
+- **Java**, Want to learn
 
 <!-- .slide vertical=true -->
 
-- **Markdown**, Familiar
-- **HTML**, Familiar
-- **Shell**, Familiar&Learning
+- **Markdown**, Learning ~semi-familiar 
+- **HTML**, Learning
+- **Shell**, Not interested
 - **Git**, Familiar
 - **VSCode**, Familiar
