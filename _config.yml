@@ -1,10 +1,10 @@
-title: Chris-Ru #
+title: aaron-rub #
 description: |
   Chris Rubin<br/>
   <a href="mailto:christopherrubin68@gmail.com">
     <i class="fas fa-envelope"></i>
   </a>
-  <a href="https://github.com/Chris-Ru">
+  <a href="https://github.com/aaron-rub">
     <i class="fab fa-github"></i>
   </a>
   <br/>
@@ -41,28 +41,21 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
               - title: '<i class="fa-solid fa-home fa-fw"></i> Home Page'
                 href: /
               - title: '<i class="fa-solid fa-code"></i> Challenges'
-                href: "https://aaron-rub
-              .github.io/challenges/"
+                href: "https://aaron-rub.github.io/challenges/"
               - title: '<i class="fa-solid fa-file-lines"></i> Notes'
-                href: "https://aaron-rub
-              .github.io/notes/"
+                href: "https://aaron-rub.github.io/notes/"
               - title: '<i class="fa-brands fa-github-square fa-fw"></i> Individual Github Tickets'
-                href: "https://github.com/Chris-Ru/Chris-Ru.github.io/projects/1"
+                href: "https://github.com/aaron-rub/Chris-Ru.github.io/projects/1"
               - title: '<i class="fa-solid fa-floppy-disk"></i> Test Prep'
-                href: "https://aaron-rub
-              .github.io/testprep/"
+                href: "https://aaron-rub.github.io/testprep/"
               - title: '<i class="fa-solid fa-laptop-file"></i> 2015 MCQ Corrections'
-                href: "https://aaron-rub
-              .github.io/2015Corrections/"
+                href: "https://aaron-rub.github.io/2015Corrections/"
               - title: '<i class="fa-solid fa-laptop-file"></i> 2015 FRQ Corrections'
-                href: "https://aaron-rub
-              .github.io/2015FRQ/"
+                href: "https://aaron-rub.github.io/2015FRQ/"
               - title: '<i class="fa-solid fa-laptop-file"></i> 2020 MCQ Corrections'
-                href: "https://aaron-rub
-              .github.io/2020Corrections/"
+                href: "https://aaron-rub.github.io/2020Corrections/"
               - title: '<i class="fa-solid fa-laptop-file"></i> 2020 FRQ Corrections'
-                href: "https://aaron-rub
-              .github.io/2020FRQ/"
+                href: "https://aaron-rub.github.io/2020FRQ/"
             simple_jekyll_search:
               enable: true 
               full_text_search: false 
