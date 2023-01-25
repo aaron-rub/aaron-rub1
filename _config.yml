@@ -1,7 +1,7 @@
 title: aaron-rub #
 description: |
-  Chris Rubin<br/>
-  <a href="mailto:christopherrubin68@gmail.com">
+  Aaron Rubin<br/>
+  <a href="mailto:aaronr06138@gmail.com">
     <i class="fas fa-envelope"></i>
   </a>
   <a href="https://github.com/aaron-rub">
@@ -45,17 +45,13 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
               - title: '<i class="fa-solid fa-file-lines"></i> Notes'
                 href: "https://aaron-rub.github.io/notes/"
               - title: '<i class="fa-brands fa-github-square fa-fw"></i> Individual Github Tickets'
-                href: "https://github.com/aaron-rub/Chris-Ru.github.io/projects/1"
+                href: "https://github.com/aaron-rub/FP"
               - title: '<i class="fa-solid fa-floppy-disk"></i> Test Prep'
                 href: "https://aaron-rub.github.io/testprep/"
-              - title: '<i class="fa-solid fa-laptop-file"></i> 2015 MCQ Corrections'
-                href: "https://aaron-rub.github.io/2015Corrections/"
-              - title: '<i class="fa-solid fa-laptop-file"></i> 2015 FRQ Corrections'
+              - title: '<i class="fa-solid fa-laptop-file"></i> Student Lesson Notes'
+                href: "https://github.com/aaron-rub/FP/issues/16/"
+              - title: '<i class="fa-solid fa-laptop-file"></i> Notes'
                 href: "https://aaron-rub.github.io/2015FRQ/"
-              - title: '<i class="fa-solid fa-laptop-file"></i> 2020 MCQ Corrections'
-                href: "https://aaron-rub.github.io/2020Corrections/"
-              - title: '<i class="fa-solid fa-laptop-file"></i> 2020 FRQ Corrections'
-                href: "https://aaron-rub.github.io/2020FRQ/"
             simple_jekyll_search:
               enable: true 
               full_text_search: false 
