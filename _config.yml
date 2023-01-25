@@ -36,7 +36,7 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
             disable: false # show/no show sidebar
             avatar:
               enable: true 
-              img: https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320
+              img: https://i.etsystatic.com/10879542/r/il/d0e537/2203383611/il_794xN.2203383611_pmnp.jpg
             nav:
               - title: '<i class="fa-solid fa-home fa-fw"></i> Home Page'
                 href: /
