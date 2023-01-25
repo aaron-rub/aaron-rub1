@@ -47,7 +47,7 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
               - title: '<i class="fa-solid fa-laptop-file"></i> Student Lesson Notes'
                 href: "https://github.com/aaron-rub/FP/issues/16/"
               - title: '<i class="fa-solid fa-laptop-file"></i> Notes'
-                href: "https://aaron-rub.github.io/2015FRQ/"
+                href: "https://aaron-rub.github.io/2022KeyVocab/"
             simple_jekyll_search:
               enable: true 
               full_text_search: false 
