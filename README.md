@@ -30,13 +30,6 @@ Notes
 
 <!-- .slide vertical=true -->
 
-- [sushi](https://github.com/zenxha/sushi)[![Star](https://img.shields.io/github/stars/zenxha/sushi.svg)](https://github.com/zenxha/sushi)[![Fork](https://img.shields.io/github/forks/zenxha/sushi.svg)](https://github.com/zenxha/sushi/fork)
-  - AP CSP Trimester 2 Quotes Website
-  - Python backend mixed with html, css, and javascript for frontend
-  - able to upload pictures to share with friends and other users
-
-<!-- .slide vertical=true -->
-
 - [Issues](https://github.com/aaron-rub/FP/issues)
   - APCSP Issues submitted with hacks and notes
 
