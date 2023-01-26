@@ -2,12 +2,16 @@ from flask import Flask, request
 import requests
 import json
 
-app = Flask(__name__)
+# API endpoint and key
+api_endpoint = "https://openexchangerates.org/api/latest.json"
+api_key = "a6b5d37646474c1b960f881472c93784"
 
-@app.route('/convert')
-def convert():
-    input = request.args.get('input')
-    # call API with the input and retrieve conversion rate
-    api_response = requests.get(f'https://api.exchangerate-api.com/v4/latest/{input}')
-    rate = api_response.json()['rates']['USD']
-    return rate
+# Prompt user for desired currency
+currency = input("Enter the currency you want to exchange to (e.g. EUR): ")
+
+# Make API request and store response
+response = requests.get(api_endpoint + "?app_id=" + api_key)
+data = json.loads(response.text)
+
+# Print exchange rate for USD to user's desired currency
+print("1 USD is equal to", data["rates"][currency], currency)
