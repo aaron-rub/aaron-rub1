@@ -39,13 +39,10 @@ Notes
 
 <!-- .slide vertical=true -->
 
-- **Python**, Learning-Familiar
-- **Java**, Want to learn
+- **My current plan**, Add HTML page for curency coverter and convert home page to match with the theme of the project. I also would like to convert the hacks that I was given and turn them from java to pyhton so that I could learn more about code. Talk to mort about my progress by myself and go over paramaters of the final.
 
 <!-- .slide vertical=true -->
 
-- **Markdown**, Learning ~semi-familiar 
-- **HTML**, Learning
-- **Shell**, Not interested
-- **Git**, Familiar
-- **VSCode**, Familiar
+- **HTML page**, Attempting
+- **Hacks Conversion**, Converted matrix hacks, check nav bar to see conversion.
+- **Brainstorm new feature**, Not done with first feature yet
