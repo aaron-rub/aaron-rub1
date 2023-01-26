@@ -52,6 +52,8 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
                 href: "https://aaron-rub.github.io/hacks/"
               - title: '<i class="fa-solid fa-laptop-file"></i> Testing'
                 href: "https://aaron-rub.github.io/hacking/"
+              - title: '<i class="fa-solid fa-laptop-file"></i> Water'
+                href: "https://aaron-rub.github.io/water/"
             simple_jekyll_search:
               enable: true 
               full_text_search: false 
