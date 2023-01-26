@@ -447,7 +447,7 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
               <style>
                 @media (min-aspect-ratio: 2400/1850) {
                   .wrap {
-                    background-image: url(https://cdn.shopify.com/s/files/1/1297/3303/products/standard-walnut-chess-board-21184254145_1024x1024.jpg?v=1575932118);
+                    background-image: url(https://s3.envato.com/files/9a1685d9-5d5a-402f-a96e-dbc5b6b5280b/inline_image_preview.jpg);
                     position: sticky;
                     /*  ORIGINAL BACKGROUND        background-image: url(https://mizuno-ai.wu-kan.cn/pixiv/71932901_p0.webp);  */
                   }
