@@ -35,11 +35,11 @@ Notes
 
 <!-- .slide -->
 
-## Toolchains
+## Project progression
 
 <!-- .slide vertical=true -->
 
-- **My current plan**, Add HTML page for curency coverter and convert home page to match with the theme of the project. I also would like to convert the hacks that I was given and turn them from java to pyhton so that I could learn more about code. Talk to mort about my progress by myself and go over paramaters of the final.
+- **My current plan**, Add HTML page for curency coverter and convert home page to match with the theme of the project. I also would like to convert the hacks that I was given and turn them from java to pyhton so that I could learn more about code. Talk to mort about my progress by myself and go over paramaters of the final. Also add a new feature that relates to the currency conversion page.
 
 <!-- .slide vertical=true -->
 
