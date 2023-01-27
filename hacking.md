@@ -1,10 +1,27 @@
-<style>
-textarea {
-  resize: none;
-}
-</style>
-</head>
-<body>
-<textarea id="w3review" name="w3review" width="px" height="px" placeholder="Input Currency abbreviation to convert to USD."/>
-<textarea id="w3review" name="w3review" width="px" height="px" placeholder="Input Currency abbreviation to convert to USD."/>
-<button id="convert-button">Convert</button>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conversion Result</title>
+  </head>
+  <body>
+    <h1>Conversion Result</h1>
+    <p>1 USD is equal to {{ exchange_rate }} {{ currency }}</p>
+  </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <h1>Currency Converter</h1>
+    <form action="/convert" method="post">
+      <label for="currency">Enter the currency you want to convert to (e.g. EUR):</label>
+      <input type="text" id="currency" name="currency">
+      <input type="submit" value="Convert">
+    </form>
+  </body>
+</html>
