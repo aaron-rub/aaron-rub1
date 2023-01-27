@@ -15,3 +15,5 @@ data = json.loads(response.text)
 
 # Print exchange rate for USD to user's desired currency
 print("1 USD is equal to", data["rates"][currency], currency)
+
+
