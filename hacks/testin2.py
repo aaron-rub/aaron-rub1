@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('ice.html')
 
 @app.route('/convert', methods=['POST'])
 def convert():
@@ -20,7 +20,7 @@ def convert():
     exchange_rate = data["rates"][currency]
 
     # Render the conversion result template with the exchange rate
-    return render_template('convert.html', exchange_rate=exchange_rate, currency=currency)
+    return render_template('water.html', exchange_rate=exchange_rate, currency=currency)
 
 if __name__ == '__main__':
     app.run(debug=True)
