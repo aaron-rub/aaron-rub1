@@ -28,7 +28,7 @@ Notes
   - APCSP Notes and Hacks Trimester 1-2
   - Python backend mixed with html, javascript for frontend
 
-<!-- .slide vertical=true -->
+<!-- .slide diagnol=true -->
 
 - [Issues](https://github.com/aaron-rub/FP/issues)
   - APCSP Issues submitted with hacks and notes
