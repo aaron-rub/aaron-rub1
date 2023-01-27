@@ -18,7 +18,7 @@ from flask import Flask, request
 import requests
 import json
 
-# API endpoint and key
+# API endpoint and key.
 api_endpoint = "https://openexchangerates.org/api/latest.json"
 api_key = "a6b5d37646474c1b960f881472c93784"
 
