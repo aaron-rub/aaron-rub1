@@ -30,6 +30,8 @@ response = requests.get(api_endpoint + "?app_id=" + api_key)
 data = json.loads(response.text)
 
 # Print exchange rate for USD to user's desired currency
+input("Enter Currency")
 print("1 USD is equal to", data["rates"][currency], currency)
+
 ```
 
