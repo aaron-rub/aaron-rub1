@@ -1,22 +1,24 @@
 <html>
   <head>
-    <title>Currency Converter</title>
+    <title>Exchange Rate Calculator</title>
   </head>
   <body>
-    <h1>Currency Converter</h1>
-    <form action="/convert" method="post">
-      <label for="currency">Enter the currency you want to convert to (e.g. EUR):</label>
+    <h1>Exchange Rate Calculator</h1>
+    <form>
+      <label for="currency">Enter Currency:</label>
       <input type="text" id="currency" name="currency">
-      <input type="submit" value="Convert">
-    </form>
+      <br><br>
+      <input type="submit" value="Submit">
+    </form> 
   </body>
 </html>
+
 
 
 ```python
 from flask import Flask, request
 import requests
-import json
+import json 
 
 # API endpoint and key.
 api_endpoint = "https://openexchangerates.org/api/latest.json"
