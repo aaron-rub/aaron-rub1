@@ -24,7 +24,7 @@
       }
   </script>
   </head>
-  <body>
+  <body onload="calculateExchangeRate()">
     <h1>Exchange Rate Calculator</h1>
     <form>
       <label for="currency">Enter Currency:</label>
@@ -33,6 +33,7 @@
       <input type="button" value="Submit" onclick="calculateExchangeRate()">
     </form>
     <div id="output"></div>
+    <h1>"The value for currency is: " <span id="currency"></span></h1>
   </body>
 </html>
 
