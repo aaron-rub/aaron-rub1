@@ -36,7 +36,7 @@
     <div id="output"></div>
     <h1>
       the value for currency is:
-      <span id="money"></span>
+      <span id="money">money</span>
     </h1>
   </body>
 </html>
