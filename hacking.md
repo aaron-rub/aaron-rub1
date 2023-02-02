@@ -36,7 +36,7 @@
     <div id="output"></div>
     <h1>
       the value for currency is:
-      <span id="currency">document.write(currency)</span>
+      <script id="currency">document.write(currency)</script>
     </h1>
   </body>
 </html>
