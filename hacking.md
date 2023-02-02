@@ -5,7 +5,7 @@
       function calculateExchangeRate() {
         // Get the user's desired currency
         var currency = document.getElementById("currency").value;
-        document.getElementById("money").innerHTML = currency;
+        document.getElementById("currency").innerHTML = currency;
 
         // Make API request and store response
         var api_endpoint = "https://openexchangerates.org/api/latest.json";
@@ -36,7 +36,7 @@
     <div id="output"></div>
     <h1>
       the value for currency is:
-      <span id="money">money</span>
+      <span id="currency">document.write(currency)</span>
     </h1>
   </body>
 </html>
