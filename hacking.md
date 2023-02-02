@@ -33,7 +33,12 @@
       <input type="button" value="Submit" onclick="calculateExchangeRate()">
     </form>
     <div id="output"></div>
-    <h1>"The value for currency is: " <span id="currency"></span></h1>
+    <h1>
+      the value for currency is:
+      <script type="text/javascript">
+        document.write(currency)
+      </script>
+    </h1>
   </body>
 </html>
 
