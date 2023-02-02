@@ -4,8 +4,8 @@
     <script>
       function calculateExchangeRate() {
         // Get the user's desired currency
-        var currency = document.getElementById("currency").value;
-        document.getElementById("currency").innerHTML = currency;
+        var currency = document.getElementById("inCurrency").value;
+        document.getElementById("inCurrency").innerHTML = currency;
         // Make API request and store response
         var api_endpoint = "https://openexchangerates.org/api/latest.json";
         var api_key = "a6b5d37646474c1b960f881472c93784";
@@ -27,12 +27,12 @@
       <label for="currency">Enter Currency:</label>
       <input type="text" id="currency" name="currency">
       <br><br>
-      <input type="button" value="Submit" onclick="calculateExchangeRate()">
+      <input id="inCurrency" type="button" value="Submit" onclick="calculateExchangeRate()">
     </form>
     <div id="output"></div>
     <h1>
       the value for currency is:
-      <script id="currency">document.documentElement.innerHTML.write(currency)</script>
+      <script id="outCurrency">document.documentElement.innerHTML.write(outCurrency)</script>
     </h1>
   </body>
 </html>
