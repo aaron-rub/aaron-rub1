@@ -36,7 +36,7 @@
     <h1>
       the value for currency is:
       <script type="text/javascript">
-        docWrite(string)
+        currency
       </script>
     </h1>
   </body>
