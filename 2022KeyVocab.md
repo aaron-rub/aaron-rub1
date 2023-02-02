@@ -52,3 +52,17 @@ A step in the data mining and data analysis process that takes raw data and tran
 Through the process of abstraction, a programmer hides all but the relevant data about an object in order to reduce complexity and increase efficiency.
 - Liquid
 Code that exits in the programming environment, but gets converted to something else when sent to the browser
+
+### Big Idea 5.3 Computing Bias
+
+
+## Notes
+
+- Google “What age groups use Facebook” vs “… TikTok”? What does the data say? Is there purposeful exclusion in these platforms? Is it harmful? Should it be corrected? Is it good business?
+- - The average age of people who use TikTok are like ~9-27 and facebook ~25-34+. I feel like there is an invisible exclusion. The older people probably use Facebook because it was the first one avaliabe to them, and TikTok is too fast pace and new gen for them. It is good for buisness, having a concentrated amount of your users being in a certain age gap is good because it allows you to focus more on the group instead of trying to improve the experience for multiple different ones.
+
+- Why do virtual assistants have female voices? Amazon, Alexa Google, Apple Siri. Was this purposeful? Is it harmful? Should it be corrected? Is it good business?
+- - This was likely purposeful, it was probably due to people feeling more comfortable when using this. Sexism  alo could have played a big role in this, it plays the stereotype that assistants are usually female.
+
+- Talk about an algorithm that influences your decisions, think about these companies (ie FAANG - Facebook, Amazon, Apple,Netflix, Google)
+- - A reccomended page, e.g(Netflix, TikTok, Instagtam) They all use data collected from your user and display items that you find appealing based off of your data.
