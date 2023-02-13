@@ -52,6 +52,8 @@ A step in the data mining and data analysis process that takes raw data and tran
 Through the process of abstraction, a programmer hides all but the relevant data about an object in order to reduce complexity and increase efficiency.
 - Liquid
 Code that exits in the programming environment, but gets converted to something else when sent to the browser
+- MIT license
+This allows using code freely and making and distributing closed source versions. Typically, the author of software with MIT License want credit. Credit could be as simple as adding the authors name in comments.
 
 ### Big Idea 5.3 Computing Bias
 
