@@ -56,7 +56,7 @@ Code that exits in the programming environment, but gets converted to something 
 ### Big Idea 5.3 Computing Bias
 
 
-## Notes
+## Notes 5.3 & 5.4
 
 - Google “What age groups use Facebook” vs “… TikTok”? What does the data say? Is there purposeful exclusion in these platforms? Is it harmful? Should it be corrected? Is it good business?
 - - The average age of people who use TikTok are like ~9-27 and facebook ~25-34+. I feel like there is an invisible exclusion. The older people probably use Facebook because it was the first one avaliabe to them, and TikTok is too fast pace and new gen for them. It is good for buisness, having a concentrated amount of your users being in a certain age gap is good because it allows you to focus more on the group instead of trying to improve the experience for multiple different ones.
@@ -66,3 +66,9 @@ Code that exits in the programming environment, but gets converted to something 
 
 - Talk about an algorithm that influences your decisions, think about these companies (ie FAANG - Facebook, Amazon, Apple,Netflix, Google)
 - - A reccomended page, e.g(Netflix, TikTok, Instagtam) They all use data collected from your user and display items that you find appealing based off of your data.
+
+## 5.5
+When creating a repository on GitHub, the platform kindly asks for the license type you prefer. Many attorneys have dedicated their careers to patents, and Qualcomm is one such company that requests a royalty payment for the use of its ideas and patents in addition to compensation for derivative works. It's important to note that using software subject to the GPL license can result in losing the right to charge for the software and associated patents. However, it's worth considering that any work generated from the original must be free, and the code must be shared, as stipulated by the GPL open-source license. While the cost of using GPL-licensed software may be higher than expected due to the loss of the ability to charge for the software and patents, there are specific standards for sharing and distributing works produced from open source licenses like the GPL.
+
+## 5.6
+Personal Identifiable Information (PII) refers to information that can be used to identify an individual. In this digital age, social networking, online searches, and other online activities have made it easy to gather PII. Therefore, it's important to be cautious while sharing information online, as it can be easily viewed by others. To protect your privacy, it's recommended that you keep private sensitive data like social security numbers, two-factor authentication codes, and financial credentials to yourself. By utilizing biometrics and multi-factor authentication, you can significantly improve the security of your systems. Additionally, symmetric and asymmetric encryption can enhance the security of your systems. Malware and phishing are two potential risks that could jeopardize the security of your PII. As such, it's essential to regularly assess your PII vulnerabilities and take appropriate precautions to safeguard your data.
