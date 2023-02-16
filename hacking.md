@@ -1,11 +1,10 @@
 <html>
   <head>
     <title>Exchange Rate Calculator</title>
-    <script>
+    <script> 
       function calculateExchangeRate() {
         // Get the user's desired currency
-        var currency = document.getElementById("inCurrency").value;
-        document.getElementById("inCurrency").innerHTML = currency;
+        var currency = document.getElementById("currency").value;
         // Make API request and store response
         var api_endpoint = "https://openexchangerates.org/api/latest.json";
         var api_key = "a6b5d37646474c1b960f881472c93784";
@@ -18,6 +17,8 @@
         var exchangeRate = data["rates"][currency];
         // Update the output div with the exchange rate
         document.getElementById("output").innerHTML = "1 USD is equal to " + exchangeRate + " " + currency;
+        // Update the outCurrency span with the user's desired currency
+        document.getElementById("outCurrency").innerHTML = currency;
       }
   </script>
   </head>
@@ -32,14 +33,12 @@
     <div id="output"></div>
     <h1>
       the value for currency is:
-      <script id="outCurrency">document.documentElement.innerHTML.write(outCurrency)</script>
+      <span id="outCurrency"></span>
     </h1>
   </body>
 </html>
 
-
-
-```python
+``` python
 from flask import Flask, request
 import requests
 import json 
@@ -48,16 +47,13 @@ import json
 api_endpoint = "https://openexchangerates.org/api/latest.json"
 api_key = "a6b5d37646474c1b960f881472c93784"
 
-# Prompt user for desired currency
-currency = input("Enter the currency you want to exchange to (e.g. EUR): ")
-
 # Make API request and store response
 response = requests.get(api_endpoint + "?app_id=" + api_key)
 data = json.loads(response.text)
 
+# Prompt user for desired currency
+currency = input("Enter the currency you want to exchange to (e.g. EUR): ")
+
 # Print exchange rate for USD to user's desired currency
-input("Enter Currency")
 print("1 USD is equal to", data["rates"][currency], currency)
-
 ```
-
