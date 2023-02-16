@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>Exchange Rate Calculator</title>
-    <script> 
+    <script>
       function calculateExchangeRate() {
         // Get the user's desired currency
         var currency = document.getElementById("currency").value;
@@ -17,26 +17,21 @@
         var exchangeRate = data["rates"][currency];
         // Update the output div with the exchange rate
         document.getElementById("output").innerHTML = "1 USD is equal to " + exchangeRate + " " + currency;
-        // Update the outCurrency span with the user's desired currency
-        document.getElementById("outCurrency").innerHTML = currency;
       }
-  </script>
+    </script>
   </head>
-  <body onload="calculateExchangeRate()">
+  <body>
     <h1>Exchange Rate Calculator</h1>
     <form>
       <label for="currency">Enter Currency:</label>
       <input type="text" id="currency" name="currency">
       <br><br>
-      <input id="inCurrency" type="button" value="Submit" onclick="calculateExchangeRate()">
+      <input type="button" value="Submit" onclick="calculateExchangeRate()">
     </form>
     <div id="output"></div>
-    <h1>
-      the value for currency is:
-      <span id="outCurrency"></span>
-    </h1>
   </body>
 </html>
+
 
 ``` python
 from flask import Flask, request
