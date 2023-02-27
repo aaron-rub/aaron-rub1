@@ -74,3 +74,10 @@ When creating a repository on GitHub, the platform kindly asks for the license t
 
 ## 5.6
 Personal Identifiable Information (PII) refers to information that can be used to identify an individual. In this digital age, social networking, online searches, and other online activities have made it easy to gather PII. Therefore, it's important to be cautious while sharing information online, as it can be easily viewed by others. To protect your privacy, it's recommended that you keep private sensitive data like social security numbers, two-factor authentication codes, and financial credentials to yourself. By utilizing biometrics and multi-factor authentication, you can significantly improve the security of your systems. Additionally, symmetric and asymmetric encryption can enhance the security of your systems. Malware and phishing are two potential risks that could jeopardize the security of your PII. As such, it's essential to regularly assess your PII vulnerabilities and take appropriate precautions to safeguard your data.
+
+## Mort's lesson 2/16/23 Key terms
+- DHCP: Dynamic host configuration protocol 
+- When typing a domain in browser an IP adress will be returned
+- When we go to githubio we get HTML in return through http: hyper text transfer protocol
+- TCP: Transmission Control Protocol. tcp/ip
+- Biometrics and multi-factor authenitaction, you can significantly imrpove the security 
