@@ -56,6 +56,8 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
                 href: "https://aaron-rub.github.io/water.html/"
               - title: '<i class="fa-solid fa-code"></i> test'
                 href: "https://aaron-rub.github.io/test/"
+              - title: '<i class="fa-solid fa-code"></i> Tri 2 final'
+                href: "https://aaron-rub.github.io/tri2finalblog/"
             simple_jekyll_search:
               enable: true 
               full_text_search: false 
