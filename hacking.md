@@ -46,7 +46,7 @@
 
     // Define the headers for the API request
     const headers = {
-      'x-rapidapi-key': 'YOUR_API_KEY_HERE',
+      'x-rapidapi-key': 'a887a57462msh889608deb83b3ddp11d368jsnce0092f67d7a',
       'x-rapidapi-host': 'apidojo-yahoo-finance-v1.p.rapidapi.com'
     };
 
