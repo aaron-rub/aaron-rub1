@@ -81,3 +81,4 @@ Personal Identifiable Information (PII) refers to information that can be used t
 - When we go to githubio we get HTML in return through http: hyper text transfer protocol
 - TCP: Transmission Control Protocol. tcp/ip
 - Biometrics and multi-factor authenitaction, you can significantly imrpove the security 
+![](2022-hp.png)
