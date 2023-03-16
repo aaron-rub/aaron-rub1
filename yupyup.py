@@ -1,9 +1,10 @@
-import pandas as pd
+# import pandas as pd
 
-grades_df = pd.read_csv('grades.csv')
+# grades_df = pd.read_csv('grades.csv')
 
 # print(grades_df)
 
-grades_df['Average'] = grades_df.mean(axis=1)
+# # grades_df['Average'] = grades_df.mean(axis=1)
 
-print(grades_df)
+# # print(grades_df)
+print("hello")
