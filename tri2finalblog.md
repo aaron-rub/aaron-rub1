@@ -1,6 +1,9 @@
-### Aaron Rubin Tri 2 Final Blog
+### Aaron Rubin CPT plan 
 
-## N@TM
-- During Night of the mueseum it gave me the opprotunity to view others projects, and use them to brainstorm ideas for my own project. Not only was I able to gain ideas but also some of them shared their work process and work ethic which I used to make my own work ethic that was efficient for me. I also took the time to view the CSA projects and see how they are doing and the expetations for them.
+## Individual CPT plan
+The first task is data collection. This involves identifying relevant data sources, designing data models that can store the necessary information, and implementing procedures to collect the data. The collected data can include user information, such as their preferred genres, artists, and songs, as well as information about the songs themselves, such as genre, tempo, and mood.
 
+Another critical task for the backend is user authentication and authorization. This involves creating a registration system for new users, designing a login and logout process, and implementing access control to ensure that only authorized users can access their personal data. This can include implementing password protection, two-factor authentication, and other security measures to protect user privacy.
+
+Once user preferences have been collected and user authentication has been established, the backend can use this information to generate customized playlists. This involves using machine learning algorithms to analyze user preferences and suggest songs that match their preferred genres, moods, and other criteria. The backend may also incorporate feedback from users to refine their playlists over time and improve their overall music listening experience.
 
