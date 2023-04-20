@@ -59,7 +59,7 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
               - title: '<i class="fa-solid fa-code"></i> Tri 2 final'
                 href: "https://aaron-rub.github.io/tri2finalblog/"
               - title: '<i class="fa-solid fa-code"></i> Student lesson Binary Hacks'
-                href: "https://aaron-rub.github.io/2023-04-20-binary/"
+                href: "https://aaron-rub.github.io/2023-04-20-binary.html/"
             simple_jekyll_search:
               enable: true 
               full_text_search: false 
