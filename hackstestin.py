@@ -5,14 +5,14 @@ api_endpoint = "https://openexchangerates.org/api/latest.json"
 api_key = "a6b5d37646474c1b960f881472c93784"
 # Making list of common currencies to be converted
 valid_currencies = ["USD", "EUR", "GBP", "JPY", "AUD", "CAD", "CHF", "CNY", "HKD"]
-# Prompts user to put in currency that is requested to be coverted and what they wish to be coverted to
+# Prompts user to put in curren cy that is requested to be coverted and what they wish to be coverted to
 while True:
     base_currency = input("Enter the base currency (e.g. USD): ")
     if base_currency.upper() not in valid_currencies:
         print("Invalid currency code. Please try again.")
         continue
     break
-    
+
 while True:
     desired_currency = input("Enter the desired currency (e.g. EUR): ")
     if desired_currency.upper() not in valid_currencies:
@@ -37,7 +37,7 @@ def convert_currency(base_currency, desired_currency, amount):
         converted_amount = amount * exchange_rate
         return converted_amount
 
-# Ask the amount they want to be coverted
+# Ask the amount of currency they want to be converted to the desired currency 
 while True:
     amount_str = input("Enter the amount to convert: ")
     try:

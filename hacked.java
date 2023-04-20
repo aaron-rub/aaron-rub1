@@ -15,3 +15,5 @@ async function handleConversion() {
   const result = document.getElementById('result');
   result.innerHTML = `1 ${input} = ${data} USD`;
 }
+
+
