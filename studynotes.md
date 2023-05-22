@@ -1,4 +1,4 @@
-# Chris Arch Vocab Page
+# Purpose of our project for visitors
 
 ### Casting, specifically for Division
 If an integer is divided and the end result is a float or double, the decimal value will be truncated (rounded down, but not technically).
