@@ -1,4 +1,4 @@
-## Welcome to my Testing Website for APCSP 2022.
+## Aaron Rubin Github Pages Website for APCSA 2023-24.
 
 <!-- .slide -->
 
@@ -24,14 +24,14 @@ Notes
 
 <!-- .slide vertical=true -->
 
-- [fastpages repository](https://github.com/aaron-rub/FP)[![Star](https://img.shields.io/github/stars/zenxha/kpop.svg)](https://github.com/zenxha/kpop)[![Fork](https://img.shields.io/github/forks/zenxha/kpop.svg)](https://github.com/zenxha/kpop/fork)
-  - APCSP Notes and Hacks Trimester 1-2
-  - Python backend mixed with html, javascript for frontend
+- [fastpages repository]()[![Star](https://img.shields.io/github/stars/zenxha/kpop.svg)](https://github.com/zenxha/kpop)[![Fork](https://img.shields.io/github/forks/zenxha/kpop.svg)](https://github.com/zenxha/kpop/fork)
+  - APCSA Notes:
+  - 
 
 <!-- .slide diagnol=true -->
 
-- [Issues](https://github.com/aaron-rub/FP/issues)
-  - APCSP Issues submitted with hacks and notes
+- [Issues]()
+  - APCSA Issues 
 
 <!-- .slide -->
 
@@ -39,10 +39,6 @@ Notes
 
 <!-- .slide vertical=true -->
 
-- **My current plan**, Add HTML page for curency coverter and convert home page to match with the theme of the project. I also would like to convert the hacks that I was given and turn them from java to pyhton so that I could learn more about code. Talk to mort about my progress by myself and go over paramaters of the final. Also add a new feature that relates to the currency conversion page.
-
+- **My current plan**, 
 <!-- .slide vertical=true -->
 
-- **HTML page**, Attempting
-- **Hacks Conversion**, Converted matrix hacks, check nav bar to see conversion.
-- **Brainstorm new feature**, Not done with first feature yet
