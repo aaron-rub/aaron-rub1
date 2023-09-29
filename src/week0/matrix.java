@@ -1,4 +1,4 @@
-package week0;
+package src.week0;
 
 // matrix class is used to store and format the output of a matrix
 public class matrix {

@@ -1,4 +1,4 @@
-package week1;
+package src.week1;
 public class ConsoleMethods {
 
     //Method to make sure no database is available in the

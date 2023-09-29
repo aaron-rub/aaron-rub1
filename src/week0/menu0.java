@@ -1,13 +1,13 @@
-package week0;
+package src.week0;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class menu {
+public class menu0 {
     Map<Integer, MenuRow> menu = new HashMap<>();
 
-    public menu(MenuRow[] rows) {
+    public menu0(MenuRow[] rows) {
         int i = 0;
         for (MenuRow row : rows) {
             menu.put(i++, new MenuRow(row.getTitle(), row.getAction()));
@@ -59,7 +59,7 @@ class Driver {
                 new MenuRow("Matrix", () -> matrix.main(null)),
         };
 
-        menu menu = new menu(rows);
+        menu0 menu = new menu0(rows);
 
         while (true) {
             System.out.println("Week 0 Menu:");

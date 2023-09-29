@@ -1,4 +1,4 @@
-package week1;
+package src.week1;
 import java.util.Iterator;
 import java.util.ArrayList;
 

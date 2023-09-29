@@ -1,4 +1,4 @@
-package week0;
+package src.week0;
 // creating a public class called swapper
 public class Swapper {
     // creating an int value

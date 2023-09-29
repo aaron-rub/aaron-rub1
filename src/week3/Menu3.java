@@ -1,18 +1,19 @@
-package week1;
+package src.week3;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Menu1 {
+public class Menu3 {
     Map<Integer, MenuRow> menu = new HashMap<>();
 
-    public Menu1(MenuRow[] rows) {
+    public Menu3(MenuRow[] rows) {
         int i = 0;
         for (MenuRow row : rows) {
             menu.put(i++, new MenuRow(row.getTitle(), row.getAction()));
         }
     }
-  
+
     public MenuRow get(int i) {
         return menu.get(i);
     }
@@ -54,20 +55,19 @@ class Driver {
     public static void main(String[] args) {
         MenuRow[] rows = new MenuRow[]{
                 new MenuRow("Exit", () -> main(null)),
-                new MenuRow("Queue", () -> QueueTester.main(null)),
-                new MenuRow("Merge", () -> OrderQ.main(null)),
-                new MenuRow("Stack", () -> stack.main(null)),
+                new MenuRow("Abstract", () -> Times.main(null)),
+                new MenuRow("Non-Abstract", () -> NTimes.main(null)),
         };
 
-        Menu1 menu = new Menu1(rows);
+        Menu3 menu = new Menu3(rows);
 
         while (true) {
-            System.out.println("Week 1 Menu:");
+            System.out.println("Week 3 Menu:");
             menu.print();
 
             try {
                 Scanner sc = new Scanner(System.in);
-              
+
                 int selection = sc.nextInt();
                 System.out.println("");
 
