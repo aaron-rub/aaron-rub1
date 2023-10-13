@@ -84,6 +84,8 @@ if (result < 0) {
 }
 ```
 
+![Output Image](image.png)
+
 ## Extra
 
 ```java
