@@ -40,26 +40,8 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
             nav:
               - title: '<i class="fa-solid fa-home fa-fw"></i> Home Page'
                 href: /
-              - title: '<i class="fa-solid fa-code"></i> Challenges'
-                href: "https://aaron-rub.github.io/challenges/"
-              - title: '<i class="fa-brands fa-github-square fa-fw"></i> Individual Github Tickets'
-                href: "https://github.com/aaron-rub/FP"
-              - title: '<i class="fa-solid fa-laptop-file"></i> Student Lesson Notes'
                 href: "https://github.com/aaron-rub/FP/issues/16/"
               - title: '<i class="fa-solid fa-laptop-file"></i> U3 Hacks'
-                href: "https://aaron-rub.github.io/U3-Hacks/"
-              - title: '<i class="fa-solid fa-laptop-file"></i> Hacks'
-                href: "https://aaron-rub.github.io/hacks/"
-              - title: '<i class="fa-solid fa-laptop-file"></i> Testing'
-                href: "https://aaron-rub.github.io/hacking/"
-              - title: '<i class="fa-solid fa-laptop-file"></i> Water'
-                href: "https://aaron-rub.github.io/water.html/"
-              - title: '<i class="fa-solid fa-code"></i> test'
-                href: "https://aaron-rub.github.io/test/"
-              - title: '<i class="fa-solid fa-code"></i> Tri 2 final'
-                href: "https://aaron-rub.github.io/tri2finalblog/"
-              - title: '<i class="fa-solid fa-code"></i> Student lesson Binary Hacks'
-                href: "https://aaron-rub.github.io/2023-04-20-binary.ipynb/"
             simple_jekyll_search:
               enable: true 
               full_text_search: false 
