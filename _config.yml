@@ -40,8 +40,8 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
             nav:
               - title: '<i class="fa-solid fa-home fa-fw"></i> Home Page'
                 href: /
-                href: "https://github.com/aaron-rub/FP/issues/16/"
               - title: '<i class="fa-solid fa-laptop-file"></i> U3 Hacks'
+                href: "https://aaron-rub.github.io/U3-Hacks/"
             simple_jekyll_search:
               enable: true 
               full_text_search: false 
