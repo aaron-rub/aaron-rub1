@@ -52,7 +52,7 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
                   #sidebar-search-input {
                     background: none;
                     border: none;
-                    color: White;
+                    color: Cornsilk;
                     width: 100%;
                   }
                   #sidebar-search-results-container {
