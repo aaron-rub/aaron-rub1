@@ -51,7 +51,7 @@ public class BreakHack {
 }
 BreakHack.main(null);
 ```
-
+-----------
 ```java
 import java.util.Scanner;
 
@@ -152,7 +152,7 @@ for (int k = 0; k < 135; k++)
     }
 }
 ```
-
+------------
 ```java
 // CODE EXAMPLE #3 (while loop)
 
