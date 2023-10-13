@@ -439,7 +439,7 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
               <style>
                 @media (min-aspect-ratio: 2400/1850) {
                   .wrap {
-                    background-image: url(https://media.istockphoto.com/id/1212342896/vector/abstract-hexagon-wallpaper-white-background-3d-vector-illustration.jpg?s=612x612&w=0&k=20&c=ynRzXUZ4_Ga3Y7joKBABdXUQI4xBvrdHJnYueJWEiw8=);
+                    background-image: url(https://i.etsystatic.com/7388389/r/il/09f150/1904765266/il_fullxfull.1904765266_bsra.jpg);
                     position: sticky;
                     /*  ORIGINAL BACKGROUND        background-image: url(https://mizuno-ai.wu-kan.cn/pixiv/71932901_p0.webp);  */
                   }
