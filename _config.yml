@@ -22,7 +22,7 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
               repo="wu-kan/utterances-storage"
               src="https://utteranc.es/client.js"
               issue-term="url"
-              theme="github-light"
+              theme="github-dark"
               crossorigin="anonymous"
               async="async"
             ></script>
