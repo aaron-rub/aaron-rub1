@@ -245,6 +245,8 @@ while (k <=7)
 // 3a code
 ```
 
+```
+
 ```java
 // 3b code
 ```
@@ -252,3 +254,10 @@ while (k <=7)
 ```java
 // 3c code
 ```
+
+<style>
+    pre {
+        background-color: lavenderblush;
+    }
+
+</style>
