@@ -33,7 +33,6 @@ Here is how the method should work:
 (1) Prompt the user to input any year that they would like <br>
 (2) Determine if the year is a leap year or not <br>
 (3) Print the necessary dialogue (ex. [year] is/is not a leap year) AND return the value of any boolean(s) used
-
 ```java
 public class CSAStudent implements Comparable<CSAStudent> {
     private String name;
@@ -113,3 +112,10 @@ if (result) {
 sc.close();
 }
 ```
+
+<style>
+    pre {
+        background-color: black;
+    }
+
+</style>
