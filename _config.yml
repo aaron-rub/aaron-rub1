@@ -451,7 +451,7 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
               <style>
                 .container.content {
                   padding: 2rem;
-                  box-shadow: 0 0 2rem rgba(255,255,255,0.9);
+                  # box-shadow: 0 0 2rem rgba(255,255,255,0.9);
                   background-color: rgba(255,255,255,0.95);
                   animation-duration: 2s;
                   animation-name: fadeIn;
