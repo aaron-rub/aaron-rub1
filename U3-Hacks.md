@@ -115,7 +115,7 @@ sc.close();
 
 <style>
     pre {
-        background-color: black;
+        background-color: lavenderblush;
     }
 
 </style>
