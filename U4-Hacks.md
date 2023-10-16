@@ -245,8 +245,6 @@ while (k <=7)
 // 3a code
 ```
 
-```
-
 ```java
 // 3b code
 ```
