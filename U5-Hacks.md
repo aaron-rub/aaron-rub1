@@ -302,3 +302,10 @@ public class Dog {
 ```
 ## 5.10 Hacks
 ![LICENSE](image-2.png)
+
+<style>
+    pre {
+        background-color: lavenderblush;
+    }
+
+</style>
