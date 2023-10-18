@@ -1,9 +1,12 @@
-Boolean Expressions:
+# U3 Hacks
 
-What is the result of !(true)&&(false) in terms of boolean values?
+## boolean Expressions:
+
+1. What is the result of !(true)&&(false) in terms of boolean values?
 
 !(true)&&(false) equals false.
-Simplify the expression not ((((true and not (false)) ^ false) ^ true) && false) using PEMDAS (Parentheses, Exponents, Multiplication and Division, Addition and Subtraction, NOT, AND, OR):
+
+2. Simplify the expression not ((((true and not (false)) ^ false) ^ true) && false) using PEMDAS (Parentheses, Exponents, Multiplication and Division, Addition and Subtraction, NOT, AND, OR):
 
 not ((((true and not (false)) ^ false) ^ true) && false)
 not ((((true and true) ^ false) ^ true) && false)
@@ -12,15 +15,17 @@ not ((true ^ true) && false)
 not (false && false)
 not (false)
 true
-Prove the following: !A * !(B + !C) = !A * (!B * !C) using De Morgan's Law.
+
+3. Prove the following: !A * !(B + !C) = !A * (!B * !C) using De Morgan's Law.
 
 Left-hand side: !A * !(B + !C)
 Applying De Morgan's Law: !A * (!B * C) (since !C is equivalent to C)
 Right-hand side: !A * (!B * !C)
 The left-hand side is equal to the right-hand side, and the equation is proven.
+
 Binary Operations:
 
-Calculate 420 && 66 after converting to binary and performing the operation.
+4. Calculate 420 && 66 after converting to binary and performing the operation.
 
 420 in binary is 110100100.
 66 in binary is 1000010.
