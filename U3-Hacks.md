@@ -8,33 +8,33 @@
 
 2. Simplify the expression not ((((true and not (false)) ^ false) ^ true) && false) using PEMDAS (Parentheses, Exponents, Multiplication and Division, Addition and Subtraction, NOT, AND, OR):
 
-not ((((true and not (false)) ^ false) ^ true) && false)
-not ((((true and true) ^ false) ^ true) && false)
-not (((true ^ false) ^ true) && false)
-not ((true ^ true) && false)
-not (false && false)
-not (false)
-true
+- not ((((true and not (false)) ^ false) ^ true) && false)
+- not ((((true and true) ^ false) ^ true) && false)
+- not (((true ^ false) ^ true) && false)
+- not ((true ^ true) && false)
+- not (false && false)
+- not (false)
+- `true`
 
 3. Prove the following: !A * !(B + !C) = !A * (!B * !C) using De Morgan's Law.
 
-Left-hand side: !A * !(B + !C)
-Applying De Morgan's Law: !A * (!B * C) (since !C is equivalent to C)
-Right-hand side: !A * (!B * !C)
-The left-hand side is equal to the right-hand side, and the equation is proven.
+- Left-hand side: !A * !(B + !C)
+- Applying De Morgan's Law: !A * (!B * C) (since !C is equivalent to C)
+- Right-hand side: !A * (!B * !C)
+- The left-hand side is equal to the right-hand side, and the equation is proven.
 
-Binary Operations:
+## Binary Operations:
 
 4. Calculate 420 && 66 after converting to binary and performing the operation.
 
-420 in binary is 110100100.
-66 in binary is 1000010.
-Performing the && operation: 110100100 && 1000010 equals false.
-Calculate 89 OR 42 after converting to binary and performing the operation.
+- 420 in binary is 110100100.
+- 66 in binary is 1000010.
+- Performing the && operation: 110100100 && 1000010 equals false.
+- Calculate 89 OR 42 after converting to binary and performing the operation.
 
-89 in binary is 1011001.
-42 in binary is 101010.
-Performing the OR operation: 1011001 OR 101010 equals false.
+- 89 in binary is 1011001.
+- 42 in binary is 101010.
+- Performing the OR operation: 1011001 OR 101010 equals false.
 
 
 
