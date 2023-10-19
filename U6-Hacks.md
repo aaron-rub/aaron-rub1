@@ -151,4 +151,47 @@ Sample data:
 
 - I: 2 4 6 8 10 12 14 16
 - O: 28 6 180
+
+```java
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers1 = {1, 2, 3, 4, 5};
+        int[] numbers2 = {2, 4, 6, 8, 10, 12, 14, 16};
+        
+        printResults(numbers1);
+        printResults(numbers2);
+    }
+
+    public static void printResults(int[] numbers) {
+        Arrays.sort(numbers);
+        
+        int A = numbers[numbers.length - 1]; // max
+        int B = numbers[0]; // min
+        int C = numbers[numbers.length / 2]; // median
+        
+        System.out.println((A + B + C) + " " + (A - B - C) + " " + ((A + B) * C));
+    }
+}
+```
+<h4>Output</h4>
+
+![Alt text](image-7.png)
+
 For extra, create your own fun program using an array
+
+```java
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+        String[] favoriteFoods = {"Pizza", "Burger", "Pasta", "Sushi", "Tacos", "Salad", "Steak"};
+
+        Random rand = new Random();
+        int randomIndex = rand.nextInt(favoriteFoods.length);
+
+        System.out.println("How about having " + favoriteFoods[randomIndex] + " for dinner tonight?");
+    }
+}
+```
