@@ -46,6 +46,8 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
                 href: "https://aaron-rub.github.io/U4-Hacks/"
               - title: '<i class="fa-solid fa-laptop-file"></i> U5 Hacks'
                 href: "https://aaron-rub.github.io/U5-Hacks/"
+              - title: '<i class="fa-solid fa-laptop-file"></i> U6 Hacks'
+                href: "https://aaron-rub.github.io/U6-Hacks/"
             simple_jekyll_search:
               enable: true 
               full_text_search: false 
