@@ -240,7 +240,7 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
             - | # <https://www.runoob.com/cssref/css-colornames.html> 
               <style>
                 .theme-base-07 {
-                  --theme-base-color: DarkSlateBlue;
+                  --theme-base-color: #641616;
                 }
               </style>
             - |
