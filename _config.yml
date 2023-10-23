@@ -33,7 +33,7 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
             sidebar-overlay: true 
           html_lang: zh # <https://www.w3school.com.cn/tags/html_ref_language_codes.asp>
           sidebar: 
-            disable: false # show/no show sidebar
+            disable: false # show/no show sideba
             avatar:
               enable: true 
               img: https://i.etsystatic.com/10879542/r/il/d0e537/2203383611/il_794xN.2203383611_pmnp.jpg
