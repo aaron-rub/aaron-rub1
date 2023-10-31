@@ -18,27 +18,18 @@
 <!-- .slide -->
 
 ## Projects
-Frontend testing
-
-Notes
+Spring Portfolio Trimester 1
 
 <!-- .slide vertical=true -->
 
-- [fastpages repository]()[![Star](https://img.shields.io/github/stars/zenxha/kpop.svg)](https://github.com/zenxha/kpop)[![Fork](https://img.shields.io/github/forks/zenxha/kpop.svg)](https://github.com/zenxha/kpop/fork)
+- [fastpages repository](https://github.com/aaron-rub/aaron-rub1/tree/gh-pages)[![Star](https://github.com/aaron-rub/aaron-rub1/tree/gh-pages)](https://github.com/aaron-rub/aaron-rub1/tree/gh-pages)[![Fork](https://github.com/aaron-rub/aaron-rub1/tree/gh-pages)](https://github.com/zenxha/kpop/fork)
   - APCSA Notes:
   - 
 
 <!-- .slide diagnol=true -->
 
 - [Issues]()
-  - APCSA Issues 
+  - [APCSA Issues](https://github.com/users/BobTheFarmer/projects/2)
 
-<!-- .slide -->
-
-## Project progression
-
-<!-- .slide vertical=true -->
-
-- **My current plan**, 
-<!-- .slide vertical=true -->
+![Scrum Board](<Screenshot 2023-10-31 114344.png>)
 
