@@ -206,8 +206,6 @@ public class Test1
 Replace the “ADD CODE HERE” below with the code to declare and initialize a two-dimensional String array called students with the names “Brice, Marvin, Anna” in the first row and “Kamal, Maria, Elissa” in the second. The finished code will print all the names in the array starting with all in the first row followed by all in the second row.
 
 ```java
-Here is the Java code to declare and initialize a two-dimensional String array named students with the names "Brice, Marvin, Anna" in the first row and "Kamal, Maria, Elissa" in the second:
-
 
 public class Test1
 {
