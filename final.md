@@ -1,5 +1,6 @@
 ## Group Contribution
 ![Alt text](image-8.png)
+
 This trimester, my role was dev-ops. But since that role isn't that work intensive, I also took up backend work. Mostly working on small bugs with the player API, in the end I was not able to fix our PlayerAPI with the amount of bugs in the code and the repository itself. Originally, Haoxuan wrote the code in python because he didn't know that it had to be in java. So I spent my time trying to convert his code that used flask, to java code using spring. Ultimately, I think that me trying to just straight up convert the code was the reason I was not able to figure it out.
 
 ### Game System Overview

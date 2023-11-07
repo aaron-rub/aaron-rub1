@@ -50,6 +50,8 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
                 href: "https://aaron-rub.github.io/aaron-rub1/U6-Hacks/"
               - title: '<i class="fa-solid fa-laptop-file"></i> U7 Hacks'
                 href: "https://aaron-rub.github.io/aaron-rub1/U7-Hacks/"
+              - title: '<i class="fa-solid fa-laptop-file"></i> U8 Hacks'
+                href: "https://aaron-rub.github.io/aaron-rub1/U8-Hacks/"
               - title: '<i class="fa-solid fa-laptop-file"></i> Final'
                 href: "https://aaron-rub.github.io/aaron-rub1/final/"
             simple_jekyll_search:
