@@ -171,7 +171,7 @@ public class Problem3 {
 Problem3.main(null);
 ```
 
-### 4) 
+### 4
 Replace the “ADD CODE HERE” below with the code to declare and create a 3 by 3 two-dimensional int array named table. The finished code will print the values 0 to 8.
 
 ```java
@@ -202,7 +202,7 @@ public class Test1
 }
 ```
 
-### 5)
+### 5
 Replace the “ADD CODE HERE” below with the code to declare and initialize a two-dimensional String array called students with the names “Brice, Marvin, Anna” in the first row and “Kamal, Maria, Elissa” in the second. The finished code will print all the names in the array starting with all in the first row followed by all in the second row.
 
 ```java
