@@ -54,6 +54,8 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
                 href: "https://aaron-rub.github.io/aaron-rub1/U8-Hacks/"
               - title: '<i class="fa-solid fa-laptop-file"></i> Final'
                 href: "https://aaron-rub.github.io/aaron-rub1/final/"
+              - title: '<i class="fa-solid fa-laptop-file"></i> Shoes'
+                href: "https://aaron-rub.github.io/aaron-rub1/shoes/"
             simple_jekyll_search:
               enable: true 
               full_text_search: false 
