@@ -25,7 +25,7 @@ class Shape {
         setShape(Tetrominoe.NoShape); // set the shape to NoShape
     }
 
-    // set the shape of the piece to the given shape and set the coordinates of the piece to the coordinates of the given shape
+    // set the shape of the piece to the given shape and set the coordinates of the piece to the coordinates of the given object
     protected void setShape(Tetrominoe shape) {
 
          coordsTable = new int[][][] { 
