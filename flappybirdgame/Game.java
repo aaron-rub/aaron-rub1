@@ -14,7 +14,7 @@ import java.util.Random;
 // Bird class is used to create a bird object in the game and to move it around the screen
 class Bird extends GameObject {
     private ProxyImage proxyImage; // ProxyImage object used to load the image of the bird
-    private Tube[] tube; // Array of Tube objects used to create the walls in the game
+    private Tube[] tube; // Array of Tube objects used to create the walls in the games
 
     // Constructor
     public Bird(int x, int y){
