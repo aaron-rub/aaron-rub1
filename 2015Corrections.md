@@ -1,7 +1,4 @@
 <h1>2015 AP CSA Multiple Choice Exam</h1>
-<h1>Total Score: 32/39</h1>
-![](2015MCQ/2015-score.png)
-
 
 <h2>Q12</h2>
 ![](2015MCQ/2015-q12.png)
