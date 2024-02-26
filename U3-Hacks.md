@@ -7,7 +7,6 @@ In the banking app, visualizing savings over time is crucial. Similar to FRQ 1's
 ```java
 private List<List<Double>> prepareSavingsData(String userId) {
     List<List<Double>> savingsData = new ArrayList<>();
-    // Assume we fetch savings records here
     for (SavingsRecord record : fetchedRecords) {
         List<Double> dataPoint = new ArrayList<>();
         dataPoint.add((double) record.getMonth());
