@@ -1,231 +1,99 @@
-### Popcorn Hack: Create a 2D Array with random values
+## FRQ Question 4
+
+(a) A number group represents a group of integers defined in some way. It could be empty, or it could contain one or more integers.
+
+Write an interface named NumberGroup that represents a group of integers. The interface should have a single contains method that determines if a given integer is in the group. For example, if group1 is of type NumberGroup, and it contains only the two numbers -5 and 3, then group1.contains(-5) would return true, and group1.contains(2) would return false. Write the complete NumberGroup interface. It must have exactly one method.
 
 ```java
-public class Main {
+public interface NumberGroup{
+    public boolean contains(int num);
+}
+public class Numbers implements NumberGroup{
+    private List<Integer> numbers;
+    public Numbers(List<Integer> numbers) {
+        this.numbers = numbers;
+    }
+    @Override
+    public boolean contains(int num){
+        return numbers.contains(num);
+    }
+}
+public class Test1{
     public static void main(String[] args) {
-        int[][] myArray = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
-        };
+        NumberGroup group1 = new Numbers(Arrays.asList(-5,3));
+        System.out.println("group1 contains -5: "+group1.contains(-5));
+        System.out.println("group1 contains 2: "+group1.contains(2));
     }
 }
-
-Main.main(null)
+Test1.main(null);
 ```
 
-### Popcorn Hack: Print all the values on this 2D Array and update the last value to be 12.
+(b) A range represents a number group that contains all (and only) the integers between a minimum value and a maximum value, inclusive. Write the Range class, which is a NumberGroup. The Range class represents the group of int values that range from a given minimum value up through a given maximum value, inclusive. For example,the declaration
+
+NumberGroup range1 = new Range(-3, 2);
+
+represents the group of integer values -3, -2, -1, 0, 1, 2.
+
+Write the complete Range class. Include all necessary instance variables and methods as well as a constructor that takes two int parameters. The first parameter represents the minimum value, and the second parameter represents the maximum value of the range. You may assume that the minimum is less than or equal to the maximum.
 
 ```java
-public class Main {
+public class Range implements NumberGroup{
+    private int min;
+    private int max;
+    public Range(int min, int max){
+        this.min = min;
+        this.max = max;
+    }
+    @Override
+    public boolean contains(int num) {
+        return num >= min && num <= max;
+    }
+}
+public class Test2{
     public static void main(String[] args) {
-        int[][] myArray = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
-        };
-
-        for (int i = 0; i < myArray.length; i++) {
-            for (int j = 0; j < myArray[i].length; j++) {
-                System.out.print(myArray[i][j] + " ");
-            }
-            System.out.println();
-        }
-
-        
-        myArray[myArray.length - 1][myArray[myArray.length - 1].length - 1] = 12;
-
-        System.out.println("value update to 12:");
-
-        for (int i = 0; i < myArray.length; i++) {
-            for (int j = 0; j < myArray[i].length; j++) {
-                System.out.print(myArray[i][j] + " ");
-            }
-            System.out.println();
-        }
+        NumberGroup range1 = new Range(-3, 2);
+        System.out.println("range1 contains -5: "+range1.contains(-5));
+        System.out.println("range1 contains 2: "+range1.contains(2));
+        System.out.println("range1 contains 10: "+range1.contains(10));
     }
 }
-
-Main.main(null);
+Test2.main(null);
 ```
+(c) The MultipleGroups class (not shown) represents a collection of NumberGroup objects and isa NumberGroup. The MultipleGroups class stores the number groups in the instance variable groupList (shown below), which is initialized in the constructor.
 
-### Popcorn Hack: Traverse the following array and only print the values divisible by 7
+private List groupList;
+
+Write the MultipleGroups method contains. The method takes an integer and returns true if and only if the integer is contained in one or more of the number groups in groupList.
 
 ```java
-public class Main {
+public class MultipleGroups implements NumberGroup {
+    private List<NumberGroup> groupList;
+    public MultipleGroups(List<NumberGroup> groupList) {
+        this.groupList = groupList;
+    }
+    public boolean contains(int num) {
+        for (NumberGroup g : groupList) {
+            if (g.contains(num)) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+public class Test3{
     public static void main(String[] args) {
-        int[][] myArray = {
-            {1, 2, 11},
-            {14, 5, 21},
-            {25, 28, 70}
-        };
-
-        for (int i = 0; i < myArray.length; i++) {
-            for (int j = 0; j < myArray[i].length; j++) {
-                if (myArray[i][j] % 7 == 0) {
-                    System.out.println(myArray[i][j]);
-                }
-            }
-        }
+        List<NumberGroup> groups = new ArrayList<>();
+        groups.add(new Range(5, 8));
+        groups.add(new Range(10, 12));
+        groups.add(new Range(1, 6));
+        MultipleGroups multiple1 = new MultipleGroups(groups);
+        System.out.println("multiple1 contains 2: "+multiple1.contains(2));
+        System.out.println("multiple1 contains 9: "+multiple1.contains(9));
+        System.out.println("multiple1 contains 6: "+multiple1.contains(6));
     }
 }
-
-Main.main(null);
+Test3.main(null);
 ```
 
-### 1
-Initialize a 5 x 5 2D array that is populated by random values.
 
-```java
-public class Array2D {
-    public static void main(String[] args) {
-        int[][] array = {
-            {1, 2, 3, 4, 5},
-            {6, 7, 8, 9, 10},
-            {11, 12, 13, 14, 15},
-            {16, 17, 18, 19, 20},
-            {21, 22, 23, 24, 25}
-        };
-
-        // Print the array
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                System.out.print(array[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
-}
-```
-
-### 2)
-- a) Print the values 47, 51, and 20 by accessing them in the the given two-dimensional array.
-- b) Find the values from part a) using row major and column major order and print the values in each respective order.
-
-```java
-public class Problem2
-{
-    public static void main(String[] args)
-    {
-        int[][] arr = { {47,3,12},{51,74,20} };
-
-        System.out.println("Values: " + arr[0][0] + ", " + arr[1][0] + ", " + arr[1][2]);
-
-        System.out.print("Row-major order: ");
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                System.out.print(arr[i][j] + " ");
-            }
-        }
-        System.out.println();
-
-        System.out.print("Column-major order: ");
-        for (int i = 0; i < arr[0].length; i++) {
-            for (int j = 0; j < arr.length; j++) {
-                System.out.print(arr[j][i] + " ");
-            }
-        }
-        System.out.println();
-    }
-}
-Problem2.main(null);
-
-```
-
-### 3) 
-The following 2d array `myArray` is populated with integers 1-9. Write an algorithm thath sorts the 2D array by column and returnst the values of the array in increaing order.
-
-The expected output is:
-`1 4 7`<br>
-`2 5 8`<br>
-`3 6 9`<br>
-
-```java
-import java.util.Arrays;
-
-public class Problem3 {
-    public static void main(String[] args) { 
-        int[][] myArray = { 
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
-        };
-        
-        // matrix
-        for (int i = 0; i < myArray.length; i++) {
-            for (int j = i + 1; j < myArray[0].length; j++) {
-                int temp = myArray[i][j];
-                myArray[i][j] = myArray[j][i];
-                myArray[j][i] = temp;
-            }
-        }
-
-        for (int i = 0; i < myArray.length; i++) {
-            for (int j = 0; j < myArray[0].length; j++) {
-                System.out.print(myArray[j][i] + " ");
-            }
-            System.out.println();
-        }
-    }
-}
-Problem3.main(null);
-```
-
-### 4
-Replace the “ADD CODE HERE” below with the code to declare and create a 3 by 3 two-dimensional int array named table. The finished code will print the values 0 to 8.
-
-```java
-Here is the Java code to declare and create a 3 by 3 two-dimensional int array named table:
-
-```java
-public class Test1
-{
-
-    public static void main(String[] args)
-    {
-        // Declare and create a 3 by 3 two-dimensional int array named table
-        int[][] table = new int[3][3];
-
-        // Should print the values in table
-        int count = 0;
-        for (int row = 0; row < table.length; row++)
-        {
-            for (int col = 0; col < table[row].length; col++)
-            {
-                table[row][col] = count;
-                count++;
-                System.out.print(table[row][col] + " ");
-            }
-            System.out.println();
-        }
-    }
-}
-```
-
-### 5
-Replace the “ADD CODE HERE” below with the code to declare and initialize a two-dimensional String array called students with the names “Brice, Marvin, Anna” in the first row and “Kamal, Maria, Elissa” in the second. The finished code will print all the names in the array starting with all in the first row followed by all in the second row.
-
-```java
-
-public class Test1
-{
-    public static void main(String[] args)
-    {
-        // Declare and initialize a two-dimensional String array named students
-        String[][] students = { 
-            {"Brice", "Marvin", "Anna"},
-            {"Kamal", "Maria", "Elissa"}
-        };
-
-        // Should print the values in students in order
-        for (int row = 0; row < students.length; row++)
-        {
-            for (int col = 0; col < students[row].length; col++)
-            {
-                System.out.print(students[row][col] + " ");
-            }
-            System.out.println();
-        }
-    }
-}
-```
+This FRQ dives into Classes and Interfaces, making us work with an interface called NumberGroup to check if specific numbers are part of different groups. We created a few classes: one that stores numbers in a list, another that defines a range of numbers, and a third that combines multiple ranges. It's all about using Object-Oriented Programming (OOP) and abstraction to make our code neat, easy to write, and even easier to update. We had to override a method to fit our needs, whether it was checking a list, a range, or multiple ranges.

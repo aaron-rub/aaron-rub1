@@ -44,13 +44,13 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
                 href: "https://aaron-rub.github.io/aaron-rub1/U3-Hacks/"
               - title: '<i class="fa-solid fa-laptop-file"></i> U4 Hacks'
                 href: "https://aaron-rub.github.io/aaron-rub1/U4-Hacks/"
-              - title: '<i class="fa-solid fa-laptop-file"></i> U5 Hacks'
+              - title: '<i class="fa-solid fa-laptop-file"></i> 2015 FRQ Question 1'
                 href: "https://aaron-rub.github.io/aaron-rub1/U5-Hacks/"
-              - title: '<i class="fa-solid fa-laptop-file"></i> U6 Hacks'
+              - title: '<i class="fa-solid fa-laptop-file"></i> 2015 FRQ Question 2'
                 href: "https://aaron-rub.github.io/aaron-rub1/U6-Hacks/"
-              - title: '<i class="fa-solid fa-laptop-file"></i> U7 Hacks'
+              - title: '<i class="fa-solid fa-laptop-file"></i> 2015 FRQ Question 3'
                 href: "https://aaron-rub.github.io/aaron-rub1/U7-Hacks/"
-              - title: '<i class="fa-solid fa-laptop-file"></i> U8 Hacks'
+              - title: '<i class="fa-solid fa-laptop-file"></i> 2015 FRQ Question 4'
                 href: "https://aaron-rub.github.io/aaron-rub1/U8-Hacks/"
               - title: '<i class="fa-solid fa-laptop-file"></i> Final'
                 href: "https://aaron-rub.github.io/aaron-rub1/final/"
