@@ -1,140 +1,72 @@
-# U3 Hacks
+# Connecting FRQ Concepts to a Banking/Savings App Project
 
-## boolean Expressions:
+## FRQ 1 (Arrays, ArrayLists, & 2D Arrays)
 
-1. What is the result of !(true)&&(false) in terms of boolean values?
+In the banking app, visualizing savings over time is crucial. Similar to FRQ 1's 2D arrays handling, we use a method in our `SavingsController` class to prep data for graph plotting:
 
-!(true)&&(false) equals false.
-
-2. Simplify the expression not ((((true and not (false)) ^ false) ^ true) && false) using PEMDAS (Parentheses, Exponents, Multiplication and Division, Addition and Subtraction, NOT, AND, OR):
-
-- not ((((true and not (false)) ^ false) ^ true) && false)
-- not ((((true and true) ^ false) ^ true) && false)
-- not (((true ^ false) ^ true) && false)
-- not ((true ^ true) && false)
-- not (false && false)
-- not (false)
-- `true`
-
-3. Prove the following: !A * !(B + !C) = !A * (!B * !C) using De Morgan's Law.
-
-- Left-hand side: !A * !(B + !C)
-- Applying De Morgan's Law: !A * (!B * C) (since !C is equivalent to C)
-- Right-hand side: !A * (!B * !C)
-- The left-hand side is equal to the right-hand side, and the equation is proven.
-
-## Binary Operations:
-
-4. Calculate 420 && 66 after converting to binary and performing the operation.
-
-- 420 in binary is 110100100.
-- 66 in binary is 1000010.
-- Performing the && operation: 110100100 && 1000010 equals false.
-- Calculate 89 OR 42 after converting to binary and performing the operation.
-
-- 89 in binary is 1011001.
-- 42 in binary is 101010.
-- Performing the OR operation: 1011001 OR 101010 equals false.
-
-
-
-
-
-BONUS: Create a program that checks if a year is a leap year or not.
-
-Here is how the method should work: 
-
-(1) Prompt the user to input any year that they would like <br>
-(2) Determine if the year is a leap year or not <br>
-(3) Print the necessary dialogue (ex. [year] is/is not a leap year) AND return the value of any boolean(s) used
 ```java
-public class PhysicsStudent implements Comparable<PhysicsStudent> {
-    private String name;
-    private double physicsGrade;
+private List<List<Double>> prepareSavingsData(String userId) {
+    List<List<Double>> savingsData = new ArrayList<>();
+    // Assume we fetch savings records here
+    for (SavingsRecord record : fetchedRecords) {
+        List<Double> dataPoint = new ArrayList<>();
+        dataPoint.add((double) record.getMonth());
+        dataPoint.add(record.getAmount());
+        savingsData.add(dataPoint);
+    }
+    return savingsData;
+}
+```
 
-    public PhysicsStudent(String name, double physicsGrade) {
-        this.name = name;
-        this.physicsGrade = physicsGrade;
+This method mirrors the row sums calculation, structuring savings data for graphing monthly savings.
+
+## FRQ 2 (Classes)
+For goal prediction, similar to the HiddenWord class, we create a GoalPredictor class to match user input against possible saving goals:
+
+```java
+public class GoalPredictor {
+    private List<String> possibleGoals;
+
+    public GoalPredictor() {
+        this.possibleGoals = Arrays.asList("vacation", "car", "home", "education");
     }
 
-    // Getters
-    public String getName() {
-        return name;
-    }
-
-    public double getPhysicsGrade() {
-        return physicsGrade;
-    }
-
-    // Override the compareTo
-    public int compareTo(PhysicsStudent other) {
-        if (this.physicsGrade < other.physicsGrade) {
-            return -1;
-        } else if (this.physicsGrade > other.physicsGrade) {
-            return 1;
-        } else {
-            return 0;
+    public String getHint(String userInput) {
+        for (String goal : possibleGoals) {
+            if (goal.startsWith(userInput)) {
+                return goal;
+            }
         }
+        return "No match found";
     }
 }
 ```
 
-Print
+This class aids in financial planning by predicting saving goals based on user input.
+
+## FRQ 3 (2D Arrays + Method and Control Structures)
+Optimizing transaction storage is akin to sparse array manipulation. We use a method in TransactionOptimizer to remove redundant transactions and compact the data:
 ```java
-public class Main {
-    public static void main(String[] args) {
-        PhysicsStudent fred = new PhysicsStudent("Fred", 3.8);
-        PhysicsStudent bob = new PhysicsStudent("Bob", 3.6);
-
-        int result = fred.compareTo(bob);
-
-        if (result < 0) {
-            System.out.println("Fred has a lower physics grade than Bob");
-        } else if (result > 0) {
-            System.out.println("Fred has a higher physics grade than Bob");
-        } else {
-            System.out.println("Fred and Bob have the same physics grade");
-        }
-    }
+public void optimizeTransactions(List<Transaction> transactions) {
+    transactions.removeIf(t -> t.isRedundant());
+    compactTransactions(transactions);
 }
-Main.main(null);
 ```
 
+This method, inspired by sparse array handling, filters and compacts transaction data for efficiency.
 
-## Extra
+## FRQ 4 (Interfaces, Methods, & Control Structures)
+Interfaces like GoalManager define interactions with different saving goals. An implementation for monthly goals might look like this:
 
 ```java
-import java.util.Scanner;
-
-public class EvenOddChecker {
-    public static boolean isEven(int number) {
-        return number % 2 == 0;
-    }
-
-    public static void main(String[] args) {
-        // input
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter a number: ");
-        int number = sc.nextInt();
-
-        boolean result = isEven(number);
-
-        if (result) {
-            System.out.println(number + " is an even number.");
-        } else {
-            System.out.println(number + " is an odd number.");
-        }
-
-        sc.close();
+public class MonthlyGoalManager implements GoalManager {
+    @Override
+    public boolean checkGoalCompletion(User user, String goalType) {
+        return hasMetMonthlyGoal(user);
     }
 }
-
 ```
 
-<style>
-    pre {
-        background-color: lavenderblush;
-    }
+This setup, echoing the NumberGroup interface from FRQ 4, allows for flexible and efficient management of various financial goals, showcasing the power of abstraction and interfaces.
 
-</style>
+By applying these FRQ insights, we enhance the banking app's functionality, making it not only more organized but also adaptable to diverse user needs.

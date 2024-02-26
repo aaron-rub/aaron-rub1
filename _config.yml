@@ -40,7 +40,7 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
             nav:
               - title: '<i class="fa-solid fa-home fa-fw"></i> Home Page'
                 href: /
-              - title: '<i class="fa-solid fa-laptop-file"></i> U3 Hacks'
+              - title: '<i class="fa-solid fa-laptop-file"></i> Associtaions/Connection to project'
                 href: "https://aaron-rub.github.io/aaron-rub1/U3-Hacks/"
               - title: '<i class="fa-solid fa-laptop-file"></i> U4 Hacks'
                 href: "https://aaron-rub.github.io/aaron-rub1/U4-Hacks/"
