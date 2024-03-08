@@ -58,6 +58,8 @@ defaults: # <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
                 href: "https://aaron-rub.github.io/aaron-rub1/shoes/"
               - title: '<i class="fa-solid fa-laptop-file"></i> 2015 Corrections'
                 href: "https://aaron-rub.github.io/aaron-rub1/2015Corrections/"
+              - title: '<i class="fa-solid fa-laptop-file"></i> Individual seed'
+                href: "https://aaron-rub.github.io/aaron-rub1/Seed-Individual/"            
             simple_jekyll_search:
               enable: true 
               full_text_search: false 
