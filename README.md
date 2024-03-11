@@ -18,16 +18,14 @@
 <!-- .slide -->
 
 ## Projects
-[Group Organization]https://github.com/John-sCC
+[Group Organization](https://github.com/John-sCC)
 
 ### My plan
-Make staplet replicate for AP Stats students. Using Plotly
+Make staplet replicate for AP Stats students. Using Plotly.
 
 <!-- .slide vertical=true -->
 
-- [github pages repository](https://github.com/aaron-rub/aaron-rub1/tree/gh-pages)[![Star](https://github.com/aaron-rub/aaron-rub1/tree/gh-pages)](https://github.com/aaron-rub/aaron-rub1/tree/gh-pages)[![Fork](https://github.com/aaron-rub/aaron-rub1/tree/gh-pages)](https://github.com/zenxha/kpop/fork)
-  - APCSA Notes:
-  - 
+- [github pages repository](https://github.com/aaron-rub/aaron-rub1/tree/gh-pages)
 
 <!-- .slide diagnol=true -->
 
