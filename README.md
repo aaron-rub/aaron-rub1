@@ -18,18 +18,20 @@
 <!-- .slide -->
 
 ## Projects
-Spring Portfolio Trimester 1
+[Group Organization]https://github.com/John-sCC
+
+### My plan
+Make staplet replicate for AP Stats students. Using Plotly
 
 <!-- .slide vertical=true -->
 
-- [fastpages repository](https://github.com/aaron-rub/aaron-rub1/tree/gh-pages)[![Star](https://github.com/aaron-rub/aaron-rub1/tree/gh-pages)](https://github.com/aaron-rub/aaron-rub1/tree/gh-pages)[![Fork](https://github.com/aaron-rub/aaron-rub1/tree/gh-pages)](https://github.com/zenxha/kpop/fork)
+- [github pages repository](https://github.com/aaron-rub/aaron-rub1/tree/gh-pages)[![Star](https://github.com/aaron-rub/aaron-rub1/tree/gh-pages)](https://github.com/aaron-rub/aaron-rub1/tree/gh-pages)[![Fork](https://github.com/aaron-rub/aaron-rub1/tree/gh-pages)](https://github.com/zenxha/kpop/fork)
   - APCSA Notes:
   - 
 
 <!-- .slide diagnol=true -->
 
 - [Issues]()
-  - [APCSA Issues](https://github.com/users/BobTheFarmer/projects/2)
-
-![Scrum Board](<Screenshot 2023-10-31 114344.png>)
+  - [Team meeting 03/06/24](https://github.com/John-sCC/jcc_frontend/issues/43)
+  - [Seed (individual & group)](https://github.com/John-sCC/jcc_frontend/issues/44)
 
